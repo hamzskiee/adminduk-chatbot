@@ -1,0 +1,1547 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Asisten informasi dokumen kependudukan | Ruang Warga</title>
+    <meta
+      name="description"
+      content="Tanya soal KTP, KK, dan dokumen kependudukan dengan bahasa sehari-hari. Asisten AI informasi dokumen kependudukan, bukan layanan resmi Dukcapil."
+    />
+    <meta
+      property="og:title"
+          content="Ruang Warga: Urusan dokumen, jadi lebih jelas."
+    />
+    <meta
+      property="og:description"
+      content="Asisten AI informasi administrasi kependudukan."
+    />
+    <meta property="og:image" content="/static/og.svg" />
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg" />
+    <link
+      rel="preload"
+      href="/static/fonts/plus-jakarta-sans-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/static/fonts/manrope-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/static/css/fonts.css" />
+    <link rel="stylesheet" href="/static/css/tailwind.css" />
+    <link rel="stylesheet" href="/static/css/base.css" />
+    <script>
+      (function () {
+        let theme = null;
+        try {
+          theme = localStorage.getItem("ruang-warga-theme");
+        } catch (e) {}
+        const dark =
+          theme === "dark" ||
+          (!theme &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches);
+        if (dark) document.documentElement.classList.add("dark");
+      })();
+    </script>
+  </head>
+  <body class="bg-background font-sans text-foreground antialiased">
+    <a
+      href="#utama"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-lg focus:bg-background focus:p-4 focus:shadow-lg"
+      >Lewati ke isi utama</a
+    >
+    <header class="relative z-30 border-b bg-background/95">
+      <nav
+        class="mx-auto max-w-6xl px-4 sm:px-6 flex h-20 items-center justify-between gap-2"
+        aria-label="Navigasi utama"
+      >
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 text-sm sm:text-base font-semibold tracking-tight"
+          aria-label="Ruang Warga, beranda"
+          ><span
+            class="size-8 inline-flex shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"
+              /></svg></span
+          ><span
+            >Ruang Warga</span
+          ></a
+        >
+        <div
+          class="hidden items-center gap-8 text-sm text-muted-foreground md:flex"
+        >
+          <a class="hover:text-foreground" href="#layanan">Layanan</a
+          ><a class="hover:text-foreground" href="#cara-kerja">Cara kerja</a
+          ><a class="hover:text-foreground" href="#tentang">Tentang</a
+          ><a class="hover:text-foreground" href="#pertanyaan">Tanya jawab</a>
+        </div>
+        <div class="flex items-center gap-2">
+          <a
+            href="/chat"
+            class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none bg-primary text-primary-foreground shadow-sm hover:bg-primary/90 px-3 py-2 whitespace-nowrap"
+            >Mulai tanya
+            <svg
+              class="hidden size-4 shrink-0 sm:block"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14m-6-6 6 6-6 6" /></svg></a
+          ><button
+            class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none text-muted-foreground hover:text-foreground hover:bg-muted p-2 md:hidden"
+            id="menu-toggle"
+            aria-label="Buka navigasi"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="size-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <button
+            id="dark-mode-toggle"
+            class="rounded-md border bg-muted/30 px-3 py-1.5 text-sm text-foreground hover:bg-muted transition-colors"
+            aria-label="Toggle mode gelap/terang"
+          >
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                id="dark-mode-sun"
+                d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+              /></svg>
+              <svg
+                id="dark-mode-moon"
+                class="hidden"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="5" /></circle>
+                <line x1="12" y1="1" x2="12" y2="3" /></line>
+                <line x1="12" y1="21" x2="12" y2="23" /></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" /></line>
+                <line x1="1" y1="12" x2="3" y2="12" /></line>
+                <line x1="21" y1="12" x2="23" y2="12" /></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" /></line>
+              </svg>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <nav
+        id="mobile-menu"
+        class="fixed inset-x-0 bottom-0 top-20 hidden bg-background/95 p-8 backdrop-blur-xl md:hidden"
+        aria-label="Navigasi seluler"
+      >
+        <div class="flex flex-col gap-8 text-2xl font-medium">
+          <a href="#layanan">Layanan</a><a href="#cara-kerja">Cara kerja</a
+          ><a href="#tentang">Tentang AI</a
+          ><a href="#pertanyaan">Tanya jawab</a>
+        </div>
+      </nav>
+    </header>
+    <main id="utama">
+      <section class="mx-auto max-w-6xl px-6 pt-16 text-center md:pt-16">
+        <a
+          href="#tentang"
+          class="group mx-auto inline-flex items-center gap-2 rounded-full border bg-muted/40 p-1 pl-3 text-xs text-muted-foreground shadow-sm sm:text-sm"
+          ><span
+            class="mr-1 rounded-full bg-background px-2 py-1 font-medium text-foreground shadow-sm"
+            >Kenalan dulu</span
+          >Asisten info KTP, KK, dan akta<span
+            class="flex size-6 items-center justify-center rounded-full bg-background"
+            ><svg
+              class="size-3 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m9 5 7 7-7 7" /></svg></span
+        ></a>
+        <h1
+          class="mx-auto mt-8 max-w-4xl text-4xl font-semibold tracking-tight md:text-6xl lg:text-7xl"
+        >
+          Urusan dokumen,<br /><span class="text-muted-foreground"
+            >jadi lebih jelas.</span
+          >
+        </h1>
+        <p
+          class="mx-auto mt-6 max-w-xl text-base text-muted-foreground md:text-lg"
+        >
+          Dari KTP hilang sampai perubahan KK. Tanya dengan bahasa sehari-hari,
+          pahami langkah awalnya.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <a
+            class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none bg-primary text-primary-foreground shadow-sm hover:bg-primary/90 px-4 py-2.5 min-h-11 text-base"
+            href="/chat"
+            >Mulai tanya sekarang
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14m-6-6 6 6-6 6" /></svg></a
+          ><a
+            class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none border bg-background shadow-sm hover:bg-muted px-4 py-2.5 min-h-11 text-base"
+            href="#cara-kerja"
+            >Lihat cara kerjanya</a
+          >
+        </div>
+        <p class="mt-4 text-xs text-muted-foreground">
+          Tanpa daftar. Tanpa memasukkan data pribadi.
+        </p>
+        <div
+          class="relative mt-12 overflow-hidden rounded-2xl border bg-muted/60 p-2 text-left md:mt-16 md:p-3"
+        >
+          <div
+            class="grid overflow-hidden rounded-xl border bg-background shadow-xl shadow-primary/5 md:grid-cols-[220px_minmax(0,1fr)]"
+          >
+            <aside class="hidden flex-col border-r bg-muted/30 p-4 md:flex">
+              <div class="flex items-center gap-2 text-sm font-medium">
+                <span
+                  class="size-7 inline-flex shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm"
+                  ><svg
+                    class="size-3.5 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"
+                    /></svg></span
+                >Ruang Warga
+              </div>
+              <a
+                href="/chat"
+                class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none border bg-background shadow-sm hover:bg-muted px-4 py-2.5 mt-6 w-full justify-start text-xs"
+                ><svg
+                  class="size-3.5 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M12 5v14M5 12h14" /></svg
+                >Percakapan baru</a
+              >
+              <p class="mb-3 mt-8 text-xs text-muted-foreground">
+                Topik layanan
+              </p>
+              <div class="space-y-1">
+                <a
+                  class="flex items-center gap-2 rounded-md p-2 text-xs bg-muted font-medium"
+                  href="/chat?q=ktp%20gw%20ilang%20gmn%20ya"
+                  ><svg
+                    class="size-3.5 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M3 5h18v14H3ZM3 9h18M7 13h3M7 16h6M16 13h2" /></svg
+                  >KTP elektronik</a
+                ><a
+                  class="flex items-center gap-2 rounded-md p-2 text-xs text-muted-foreground hover:bg-muted"
+                  href="/chat?q=kk%20rusak%20bisa%20diganti%20ga"
+                  ><svg
+                    class="size-3.5 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+                    /></svg
+                  >Kartu keluarga</a
+                ><a
+                  class="flex items-center gap-2 rounded-md p-2 text-xs text-muted-foreground hover:bg-muted"
+                  href="/chat?q=Apa%20itu%20KIA%3F"
+                  ><svg
+                    class="size-3.5 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM8 14s1.5 2 4 2 4-2 4-2M8 8h.01M16 8h.01"
+                    /></svg
+                  >Kartu identitas anak</a
+                ><a
+                  class="flex items-center gap-2 rounded-md p-2 text-xs text-muted-foreground hover:bg-muted"
+                  href="/chat?q=Cara%20mengurus%20akta%20kelahiran%3F"
+                  ><svg
+                    class="size-3.5 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8ZM14 2v6h6M8 13h8M8 17h5"
+                    /></svg
+                  >Akta kelahiran</a
+                >
+              </div>
+            </aside>
+            <div class="min-w-0">
+              <div
+                class="flex items-center justify-between gap-4 border-b px-4 py-3 sm:px-6"
+              >
+                <div>
+                  <p class="text-sm font-medium">
+                    Asisten dokumen kependudukan
+                  </p>
+                  <p class="mt-0.5 text-xs text-muted-foreground">
+                    Ruang untuk pertanyaanmu
+                  </p>
+                </div>
+                <span
+                  class="rounded-md border px-2 py-1 text-xs text-muted-foreground"
+                  >Contoh<span class="hidden sm:inline"> percakapan</span></span
+                >
+              </div>
+              <div class="space-y-4 px-4 py-6 sm:px-8 sm:py-6">
+                <div class="flex justify-end gap-3">
+                  <p
+                    class="rounded-xl rounded-tr-sm bg-primary px-4 py-3 text-sm text-primary-foreground"
+                  >
+                    ktp gw ilang gmn ya?
+                  </p>
+                  <span
+                    class="hidden size-8 items-center justify-center rounded-full border bg-muted sm:inline-flex"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10"
+                      /></svg
+                  ></span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span
+                    class="size-8 inline-flex shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"
+                      /></svg
+                  ></span>
+                  <div class="max-w-lg">
+                    <p class="mb-2 text-xs font-medium">Ruang Warga</p>
+                    <div
+                      class="rounded-xl rounded-tl-sm border border-border/50 bg-muted/50 p-3 text-sm leading-relaxed"
+                    >
+                      <p>
+                        Kalau KTP hilang, kamu bisa mulai dengan menyiapkan:
+                      </p>
+                      <ul class="my-3 space-y-2">
+                        <li class="flex items-center gap-2">
+                          <svg
+                            class="size-3.5 shrink-0"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                          >
+                            <path d="m5 12 4 4L19 6" /></svg
+                          >Surat keterangan kehilangan dari kepolisian
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <svg
+                            class="size-3.5 shrink-0"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                          >
+                            <path d="m5 12 4 4L19 6" /></svg
+                          >Kartu keluarga
+                        </li>
+                      </ul>
+                      <p class="text-muted-foreground">
+                        Lalu, konfirmasi syarat dan cara pengajuannya ke
+                        Disdukcapil setempat, ya.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/chat"
+                  class="flex items-center justify-between rounded-xl border bg-background px-4 py-3 text-sm text-muted-foreground shadow-sm"
+                  ><span>Tulis pertanyaanmu di sini…</span
+                  ><span
+                    class="rounded-md bg-primary p-1.5 text-primary-foreground"
+                    ><svg
+                      class="size-3.5 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 19V5M5 12l7-7 7 7" /></svg></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4 text-xs text-muted-foreground">
+          Contoh tampilan percakapan. Jawaban asli disusun oleh model AI.
+        </p>
+      </section>
+      <section
+        class="mx-auto max-w-6xl px-6 py-12 md:py-16"
+        aria-label="Cakupan informasi"
+      >
+        <p class="text-center text-sm text-muted-foreground">
+          Satu tempat untuk mengenali layanan kependudukan
+        </p>
+        <div
+          class="mt-6 flex flex-wrap justify-center gap-x-8 gap-y-4 text-base font-medium text-muted-foreground md:gap-x-12 md:text-lg"
+        >
+          <span class="inline-flex items-center gap-2"
+            ><svg
+              class="size-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M3 5h18v14H3ZM3 9h18M7 13h3M7 16h6M16 13h2" /></svg
+            >KTP</span
+          ><span class="inline-flex items-center gap-2"
+            ><svg
+              class="size-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+              /></svg
+            >KK</span
+          ><span class="inline-flex items-center gap-2"
+            ><svg
+              class="size-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM8 14s1.5 2 4 2 4-2 4-2M8 8h.01M16 8h.01"
+              /></svg
+            >KIA</span
+          ><span class="inline-flex items-center gap-2"
+            ><svg
+              class="size-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8ZM14 2v6h6M8 13h8M8 17h5"
+              /></svg
+            >Akta</span
+          ><span class="inline-flex items-center gap-2"
+            ><svg
+              class="size-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2ZM11 18h2"
+              /></svg
+            >IKD</span
+          ><span class="inline-flex items-center gap-2"
+            ><svg
+              class="size-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0ZM12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+              /></svg
+            >Domisili</span
+          >
+        </div>
+      </section>
+      <section id="layanan" class="border-y bg-muted/20 py-16 md:py-24">
+        <div class="mx-auto max-w-6xl px-6">
+          <div
+            class="flex flex-col justify-between gap-4 md:flex-row md:items-end"
+          >
+<h2
+              class="max-w-xl text-3xl font-semibold tracking-tight md:text-4xl"
+              >
+              Layanan yang bisa dibantu.<br /><span
+                class="text-muted-foreground"
+                >Mulai dari yang kamu perlukan.</span
+              >
+            </h2>
+            <p class="max-w-xs text-sm text-muted-foreground">
+              Kenali syarat dan langkahnya sebelum mengurus di kantor atau
+              layanan resmi.
+            </p>
+          </div>
+          <div class="mt-10 grid gap-4 md:grid-cols-2">
+            <a
+              class="group rounded-xl border bg-background p-6 shadow-sm transition-colors duration-300 hover:border-foreground/25 sm:p-8"
+              href="/chat?q=ktp%20gw%20ilang%20gmn%20ya"
+              ><div class="flex items-center justify-between">
+                <svg
+                  class="size-6 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M3 5h18v14H3ZM3 9h18M7 13h3M7 16h6M16 13h2" /></svg
+                ><span class="text-muted-foreground group-hover:text-foreground"
+                  ><svg
+                    class="size-4 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M7 17 17 7M7 7h10v10" /></svg
+                ></span>
+              </div>
+              <h3 class="mt-6 text-xl font-semibold tracking-tight">
+                KTP elektronik
+              </h3>
+              <p class="mt-2 max-w-sm text-sm text-muted-foreground">
+                Hilang, rusak, atau perlu ubah data? Kenali langkah awalnya.
+              </p>
+              <div
+                class="relative mx-auto mt-6 w-full max-w-xs rounded-xl border bg-muted/30 p-5"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="rounded-lg border bg-background p-3"
+                    ><svg
+                      class="size-6 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M3 5h18v14H3ZM3 9h18M7 13h3M7 16h6M16 13h2"
+                      /></svg
+                  ></span>
+                  <div class="space-y-2">
+                    <div class="h-2 w-24 rounded-full bg-border"></div>
+                    <div class="h-2 w-16 rounded-full bg-border/60"></div>
+                  </div>
+                  <span class="ml-auto rounded-full border bg-background p-1.5"
+                    ><svg
+                      class="size-3 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="m5 12 4 4L19 6" /></svg
+                  ></span>
+                </div>
+                <div class="mt-6 flex flex-wrap gap-2">
+                  <span
+                    class="rounded-md border bg-background px-2 py-1 text-xs text-muted-foreground"
+                    >KTP hilang</span
+                  ><span
+                    class="rounded-md border bg-background px-2 py-1 text-xs text-muted-foreground"
+                    >KTP rusak</span
+                  ><span
+                    class="rounded-md border bg-background px-2 py-1 text-xs text-muted-foreground"
+                    >Ubah data</span
+                  >
+                </div>
+              </div></a
+            ><a
+              class="group rounded-xl border bg-background p-6 shadow-sm transition-colors duration-300 hover:border-foreground/25 sm:p-8"
+              href="/chat?q=kk%20rusak%20bisa%20diganti%20ga"
+              ><div class="flex items-center justify-between">
+                <svg
+                  class="size-6 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+                  /></svg
+                ><span class="text-muted-foreground group-hover:text-foreground"
+                  ><svg
+                    class="size-4 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M7 17 17 7M7 7h10v10" /></svg
+                ></span>
+              </div>
+<h3 class="mt-6 text-xl font-semibold tracking-tight">
+                 Kartu keluarga
+              </h3>
+              <p class="mt-2 max-w-sm text-sm text-muted-foreground">
+                Pahami pembuatan, perubahan data, dan penggantian KK.
+              </p>
+              <div
+                class="relative mx-auto mt-6 w-full max-w-xs rounded-xl border bg-muted/30 p-5"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="rounded-lg border bg-background p-3"
+                    ><svg
+                      class="size-6 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+                      /></svg
+                  ></span>
+                  <div class="space-y-2">
+                    <div class="h-2 w-24 rounded-full bg-border"></div>
+                    <div class="h-2 w-16 rounded-full bg-border/60"></div>
+                  </div>
+                  <span class="ml-auto rounded-full border bg-background p-1.5"
+                    ><svg
+                      class="size-3 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="m5 12 4 4L19 6" /></svg
+                  ></span>
+                </div>
+                <div class="mt-6 flex flex-wrap gap-2">
+                  <span
+                    class="rounded-md border bg-background px-2 py-1 text-xs text-muted-foreground"
+                    >KK baru</span
+                  ><span
+                    class="rounded-md border bg-background px-2 py-1 text-xs text-muted-foreground"
+                    >Perubahan data</span
+                  ><span
+                    class="rounded-md border bg-background px-2 py-1 text-xs text-muted-foreground"
+                    >KK rusak</span
+                  >
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            <a
+              href="/chat?q=Apa%20itu%20KIA%3F"
+              class="group rounded-xl border bg-background p-6 shadow-sm transition-colors duration-300 hover:bg-muted/40"
+              ><svg
+                class="size-5 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM8 14s1.5 2 4 2 4-2 4-2M8 8h.01M16 8h.01"
+                />
+              </svg>
+              <h3 class="mt-6 text-base font-medium">Kartu identitas anak</h3>
+              <p class="mt-2 text-sm text-muted-foreground">
+                Kenali KIA, kartu identitas untuk anak di bawah 17 tahun.
+              </p>
+              <span
+                class="mt-6 inline-flex items-center gap-2 text-xs font-medium"
+                >Tanya soal ini
+                <svg
+                  class="size-3 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg></span></a
+            ><a
+              href="/chat?q=Cara%20mengurus%20akta%20kelahiran%3F"
+              class="group rounded-xl border bg-background p-6 shadow-sm transition-colors duration-300 hover:bg-muted/40"
+              ><svg
+                class="size-5 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8ZM14 2v6h6M8 13h8M8 17h5"
+                />
+              </svg>
+              <h3 class="mt-6 text-base font-medium">Akta kelahiran</h3>
+              <p class="mt-2 text-sm text-muted-foreground">
+                Cara mencatatkan kelahiran dan membuat aktanya.
+              </p>
+              <span
+                class="mt-6 inline-flex items-center gap-2 text-xs font-medium"
+                >Tanya soal ini
+                <svg
+                  class="size-3 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg></span></a
+            ><a
+              href="/chat?q=Cara%20mengurus%20akta%20kematian%3F"
+              class="group rounded-xl border bg-background p-6 shadow-sm transition-colors duration-300 hover:bg-muted/40"
+              ><svg
+                class="size-5 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
+                />
+              </svg>
+              <h3 class="mt-6 text-base font-medium">Akta kematian</h3>
+              <p class="mt-2 text-sm text-muted-foreground">
+                Cara melaporkan kematian dan membuat aktanya.
+              </p>
+              <span
+                class="mt-6 inline-flex items-center gap-2 text-xs font-medium"
+                >Tanya soal ini
+                <svg
+                  class="size-3 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg></span></a
+            ><a
+              href="/chat?q=IKD%20itu%20apa%20ya%3F"
+              class="group rounded-xl border bg-background p-6 shadow-sm transition-colors duration-300 hover:bg-muted/40"
+              ><svg
+                class="size-5 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2ZM11 18h2"
+                />
+              </svg>
+              <h3 class="mt-6 text-base font-medium">Identitas digital</h3>
+              <p class="mt-2 text-sm text-muted-foreground">
+                Pahami IKD (KTP digital di HP) dan cara mengaktifkannya.
+              </p>
+              <span
+                class="mt-6 inline-flex items-center gap-2 text-xs font-medium"
+                >Tanya soal ini
+                <svg
+                  class="size-3 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg></span></a
+            ><a
+              href="/chat?q=Mau%20pindah%20domisili%2C%20mulai%20dari%20mana%3F"
+              class="group rounded-xl border bg-background p-6 shadow-sm transition-colors duration-300 hover:bg-muted/40"
+              ><svg
+                class="size-5 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0ZM12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                />
+              </svg>
+              <h3 class="mt-6 text-base font-medium">Pindah domisili</h3>
+              <p class="mt-2 text-sm text-muted-foreground">
+                Dari mengurus surat pindah sampai lapor di alamat baru.
+              </p>
+              <span
+                class="mt-6 inline-flex items-center gap-2 text-xs font-medium"
+                >Tanya soal ini
+                <svg
+                  class="size-3 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg></span
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section id="cara-kerja" class="mx-auto max-w-6xl px-6 py-16 md:py-24">
+        <h2 class="text-3xl font-medium tracking-tight md:text-4xl">
+          Dari pertanyaan ke langkah awal.
+        </h2>
+        <p class="mt-4 text-muted-foreground">
+          Nggak perlu hafal istilah administrasi untuk mulai.
+        </p>
+        <ol class="mt-12 grid gap-8 md:grid-cols-3">
+          <li class="border-t border-dashed pt-6">
+            <span
+              class="inline-flex size-8 items-center justify-center rounded-lg border bg-muted/30 text-sm font-medium"
+              >01</span
+            >
+            <h3 class="mt-6 text-lg font-medium">Ceritakan kebutuhanmu</h3>
+            <p class="mt-3 max-w-xs text-sm text-muted-foreground">
+              Pilih topik atau langsung tulis pertanyaan. Bahasa santai juga
+              boleh.
+            </p>
+          </li>
+          <li class="border-t border-dashed pt-6">
+            <span
+              class="inline-flex size-8 items-center justify-center rounded-lg border bg-muted/30 text-sm font-medium"
+              >02</span
+            >
+            <h3 class="mt-6 text-lg font-medium">Baca panduan awalnya</h3>
+            <p class="mt-3 max-w-xs text-sm text-muted-foreground">
+              Pahami gambaran syarat dan langkahnya. Tanyakan lagi kalau belum
+              jelas.
+            </p>
+          </li>
+          <li class="border-t border-dashed pt-6">
+            <span
+              class="inline-flex size-8 items-center justify-center rounded-lg border bg-muted/30 text-sm font-medium"
+              >03</span
+            >
+            <h3 class="mt-6 text-lg font-medium">Pastikan ke layanan resmi</h3>
+            <p class="mt-3 max-w-xs text-sm text-muted-foreground">
+              Pastikan info terbaru ke Disdukcapil (Dinas Kependudukan dan
+              Pencatatan Sipil) daerahmu sebelum mengurus.
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="border-y border-dashed bg-muted/20">
+        <div
+          class="mx-auto max-w-6xl px-6 grid gap-10 py-16 md:grid-cols-2 md:items-center md:py-24"
+        >
+          <h2
+            id="tagline"
+            class="max-w-xl text-3xl font-medium tracking-tight md:text-5xl"
+          >
+            Nggak harus formal.<br /><span class="text-muted-foreground"
+              >Yang penting, kamu paham.</span
+            >
+          </h2>
+          <div>
+            <p class="mb-4 text-sm text-muted-foreground">
+              Coba salah satu pertanyaan ini
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a
+                class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none border bg-background shadow-sm hover:bg-muted px-4 py-2.5 rounded-full px-4 py-3 text-sm font-normal"
+                href="/chat?q=ktp%20gw%20ilang%20gmn%20ya"
+                >ktp gw ilang gmn ya
+                <svg
+                  class="size-3.5 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M7 17 17 7M7 7h10v10" /></svg></a
+              ><a
+                class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none border bg-background shadow-sm hover:bg-muted px-4 py-2.5 rounded-full px-4 py-3 text-sm font-normal"
+                href="/chat?q=kk%20rusak%20bisa%20diganti%20ga"
+                >kk rusak bisa diganti ga
+                <svg
+                  class="size-3.5 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M7 17 17 7M7 7h10v10" /></svg></a
+              ><a
+                class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none border bg-background shadow-sm hover:bg-muted px-4 py-2.5 rounded-full px-4 py-3 text-sm font-normal"
+                href="/chat?q=Apa%20itu%20IKD%3F"
+                >Apa itu IKD?
+                <svg
+                  class="size-3.5 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M7 17 17 7M7 7h10v10" /></svg></a
+              ><a
+                class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none border bg-background shadow-sm hover:bg-muted px-4 py-2.5 rounded-full px-4 py-3 text-sm font-normal"
+                href="/chat?q=Bikin%20akta%20kelahiran%20perlu%20apa%3F"
+                >Bikin akta kelahiran perlu apa?
+                <svg
+                  class="size-3.5 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M7 17 17 7M7 7h10v10" /></svg
+              ></a>
+            </div>
+            <p
+              class="mt-6 flex items-center gap-2 text-xs text-muted-foreground"
+            >
+              <svg
+                class="size-3.5 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 10h14v11H5ZM8 10V7a4 4 0 0 1 8 0v3" /></svg
+              >Cukup ceritakan situasinya, bukan data pribadinya.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="tentang"
+        class="mx-auto max-w-6xl px-6 grid gap-10 py-16 md:grid-cols-2 md:items-center md:py-24"
+      >
+        <div>
+          <div
+            class="mb-6 inline-flex items-center gap-2 rounded-md border px-2 py-1 text-xs font-medium"
+          >
+            <svg
+              class="size-3 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5ZM20 2v4M18 4h4"
+              /></svg
+            >Tentang AI di baliknya
+          </div>
+          <h2 class="max-w-md text-3xl font-medium tracking-tight md:text-4xl">
+            Belajar dari pertanyaan.<br /><span class="text-muted-foreground"
+              >Bukan mengakses data warga.</span
+            >
+          </h2>
+          <p class="mt-6 max-w-md text-muted-foreground">
+            AI ini (model Qwen2.5) dilatih ulang dengan contoh tanya jawab
+            seputar dokumen kependudukan memakai teknik LoRA, yaitu cara melatih
+            AI secara hemat. Sederhananya, AI belajar memahami berbagai cara
+            orang bertanya.
+          </p>
+          <p class="mt-4 max-w-md text-sm text-muted-foreground">
+            AI tetap bisa keliru. Gunakan jawabannya sebagai panduan awal, bukan
+            keputusan resmi.
+          </p>
+        </div>
+        <div class="rounded-xl border bg-muted/30 p-6 sm:p-8">
+          <div class="space-y-4">
+            <div class="flex gap-4 rounded-lg border bg-background p-4">
+              <span
+                class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-muted"
+                ><svg
+                  class="size-5 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
+                  /></svg
+              ></span>
+              <div>
+                <h3 class="text-sm font-medium">Contoh tanya jawab</h3>
+                <p class="mt-1 text-xs text-muted-foreground">
+                  Bahan belajar AI tentang layanan kependudukan.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4 rounded-lg border bg-background p-4">
+              <span
+                class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-muted"
+                ><svg
+                  class="size-5 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5ZM20 2v4M18 4h4"
+                  /></svg
+              ></span>
+              <div>
+                <h3 class="text-sm font-medium">Pelatihan dengan LoRA</h3>
+                <p class="mt-1 text-xs text-muted-foreground">
+                  Melatih AI agar paham urusan layanan kependudukan.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4 rounded-lg border bg-background p-4">
+              <span
+                class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-muted"
+                ><svg
+                  class="size-5 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"
+                  /></svg
+              ></span>
+              <div>
+                <h3 class="text-sm font-medium">
+                  Panduan berbahasa sehari-hari
+                </h3>
+                <p class="mt-1 text-xs text-muted-foreground">
+                  Dirancang agar informasi lebih mudah dipahami.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="mt-6 flex items-start gap-2 text-xs text-muted-foreground">
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM12 11v6M12 7h.01"
+              /></svg
+            >Jawaban disusun AI dari kumpulan informasi bersumber resmi. Tetap
+            pastikan ke Disdukcapil setempat.
+          </p>
+        </div>
+      </section>
+      <section id="pertanyaan" class="border-t py-16 md:py-24">
+        <div
+          class="mx-auto max-w-6xl px-6 grid gap-10 md:grid-cols-2 md:gap-16"
+        >
+          <div>
+            <h2 class="text-3xl font-medium tracking-tight md:text-4xl">
+              Sebelum mulai,<br /><span class="text-muted-foreground"
+                >mungkin kamu bertanya.</span
+              >
+            </h2>
+            <p class="mt-4 max-w-xs text-sm text-muted-foreground">
+              Kenali cara pakai dan batasannya agar kamu lebih nyaman bertanya.
+            </p>
+          </div>
+          <div>
+            <details class="group border-b border-dashed py-5 first:pt-0">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium hover:text-muted-foreground"
+              >
+                Ini layanan resmi Dukcapil?<span
+                  class="transition-transform duration-300 group-open:rotate-45"
+                  ><svg
+                    class="size-4 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 5v14M5 12h14" /></svg
+                ></span>
+              </summary>
+              <p
+                class="mt-4 pr-6 text-sm leading-relaxed text-muted-foreground"
+              >
+                Bukan. Ruang Warga adalah proyek mahasiswa untuk membantu
+                memahami informasi awal administrasi kependudukan. Tidak
+                terhubung ke sistem pemerintah.
+              </p>
+            </details>
+            <details class="group border-b border-dashed py-5 first:pt-0">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium hover:text-muted-foreground"
+              >
+                Apa saja yang bisa saya tanyakan?<span
+                  class="transition-transform duration-300 group-open:rotate-45"
+                  ><svg
+                    class="size-4 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 5v14M5 12h14" /></svg
+                ></span>
+              </summary>
+              <p
+                class="mt-4 pr-6 text-sm leading-relaxed text-muted-foreground"
+              >
+                KTP elektronik, kartu keluarga (KK), kartu identitas anak (KIA),
+                akta kelahiran, akta kematian, KTP digital (IKD), dan pindah
+                domisili (pindah alamat).
+              </p>
+            </details>
+            <details class="group border-b border-dashed py-5 first:pt-0">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium hover:text-muted-foreground"
+              >
+                Boleh bertanya pakai bahasa santai?<span
+                  class="transition-transform duration-300 group-open:rotate-45"
+                  ><svg
+                    class="size-4 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 5v14M5 12h14" /></svg
+                ></span>
+              </summary>
+              <p
+                class="mt-4 pr-6 text-sm leading-relaxed text-muted-foreground"
+              >
+                Boleh. Tulis seperti kamu biasa bertanya, misalnya “ktp gw ilang
+                gmn ya”. Tidak perlu mengubahnya menjadi bahasa formal.
+              </p>
+            </details>
+            <details class="group border-b border-dashed py-5 first:pt-0">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium hover:text-muted-foreground"
+              >
+                Apakah jawaban di sini berasal dari AI?<span
+                  class="transition-transform duration-300 group-open:rotate-45"
+                  ><svg
+                    class="size-4 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 5v14M5 12h14" /></svg
+                ></span>
+              </summary>
+              <p
+                class="mt-4 pr-6 text-sm leading-relaxed text-muted-foreground"
+              >
+                Ya. Jawaban disusun AI (model Qwen2.5 yang sudah dilatih khusus)
+                yang berjalan tanpa internet, dibantu pencarian ke kumpulan
+                informasi dari sumber resmi. AI tetap bisa keliru, jadi pastikan
+                ke Disdukcapil setempat.
+              </p>
+            </details>
+            <details class="group border-b border-dashed py-5 first:pt-0">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium hover:text-muted-foreground"
+              >
+                Apakah saya perlu memasukkan NIK?<span
+                  class="transition-transform duration-300 group-open:rotate-45"
+                  ><svg
+                    class="size-4 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 5v14M5 12h14" /></svg
+                ></span>
+              </summary>
+              <p
+                class="mt-4 pr-6 text-sm leading-relaxed text-muted-foreground"
+              >
+                Tidak. Jangan kirim NIK, nomor KK, alamat lengkap, atau foto
+                dokumen. Percakapan hanya ada di tab browser ini dan hilang saat
+                halaman dimuat ulang.
+              </p>
+            </details>
+            <details class="group border-b border-dashed py-5 first:pt-0">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium hover:text-muted-foreground"
+              >
+                Bisa langsung mengurus dokumen di sini?<span
+                  class="transition-transform duration-300 group-open:rotate-45"
+                  ><svg
+                    class="size-4 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 5v14M5 12h14" /></svg
+                ></span>
+              </summary>
+              <p
+                class="mt-4 pr-6 text-sm leading-relaxed text-muted-foreground"
+              >
+                Belum bisa. Situs ini hanya memberikan panduan awal. Persyaratan
+                dan pengajuan tetap perlu dikonfirmasi ke Disdukcapil setempat.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="mx-auto max-w-6xl px-6 pb-16 md:pb-24">
+        <div
+          class="rounded-2xl border bg-muted/30 px-6 py-16 text-center md:py-20"
+        >
+          <span
+            class="size-12 inline-flex shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm"
+            ><svg
+              class="size-6 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"
+              /></svg
+          ></span>
+          <h2
+            class="mx-auto mt-6 max-w-xl text-3xl font-medium tracking-tight md:text-5xl"
+          >
+            Lebih siap mengurusnya.<br /><span class="text-muted-foreground"
+              >Mulai dari satu pertanyaan.</span
+            >
+          </h2>
+          <p class="mx-auto mt-4 max-w-md text-sm text-muted-foreground">
+            Ada yang ingin kamu pahami soal dokumen kependudukan? Kita mulai
+            dari situ.
+          </p>
+          <a
+            class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none bg-primary text-primary-foreground shadow-sm hover:bg-primary/90 px-4 py-2.5 mt-8 text-base"
+            href="/chat"
+            >Mulai tanya sekarang
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+          ></a>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t">
+      <div class="mx-auto max-w-6xl px-6 py-10">
+        <div class="flex flex-col justify-between gap-8 md:flex-row">
+          <div>
+            <a
+              href="/"
+              class="inline-flex items-center gap-2 text-sm sm:text-base font-semibold tracking-tight"
+              aria-label="Ruang Warga, beranda"
+              ><span
+                class="size-8 inline-flex shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm"
+                ><svg
+                  class="size-4 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"
+                  /></svg></span
+              ><span
+                >Ruang Warga</span
+              ></a
+            >
+            <p class="mt-4 max-w-sm text-sm text-muted-foreground">
+              Informasi awal untuk urusan kependudukan.<br />Lebih dekat, lebih
+              mudah dipahami.
+            </p>
+          </div>
+          <div
+            class="flex flex-wrap items-start gap-6 text-sm text-muted-foreground"
+          >
+            <a class="hover:text-foreground" href="#layanan">Layanan</a
+            ><a class="hover:text-foreground" href="#tentang">Tentang proyek</a
+            ><button class="hover:text-foreground" data-legal="privasi">
+              Privasi</button
+            ><button class="hover:text-foreground" data-legal="ketentuan">
+              Ketentuan
+            </button>
+          </div>
+        </div>
+        <div
+          class="mt-10 flex flex-col justify-between gap-4 border-t border-dashed pt-6 text-xs text-muted-foreground md:flex-row"
+        >
+          <p>
+            Proyek mahasiswa, bukan situs resmi Dukcapil.<br
+              class="md:hidden"
+            />
+            Pastikan info ke Disdukcapil setempat.
+          </p>
+          <p>Ruang Warga © 2026</p>
+        </div>
+      </div>
+    </footer>
+    <dialog
+      id="legal-dialog"
+      class="m-auto max-w-lg rounded-xl border bg-background p-6 text-foreground shadow-xl backdrop:bg-primary/30"
+    >
+      <h2 id="legal-title" class="text-xl font-semibold"></h2>
+      <p
+        id="legal-copy"
+        class="mt-4 text-sm leading-relaxed text-muted-foreground"
+      ></p>
+      <form method="dialog" class="mt-6">
+        <button
+          class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none bg-primary text-primary-foreground shadow-sm hover:bg-primary/90 px-4 py-2.5"
+        >
+          Saya mengerti
+        </button>
+      </form>
+    </dialog>
+    <script src="/static/js/site.js"></script>
+    <script src="/static/js/motion.js"></script>
+    <script src="/static/js/theme.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1898 @@
+[
+ {
+  "intent": "akta_kutipan",
+  "kategori": "layanan",
+  "topik": "Bentuk akta kelahiran",
+  "label_saran": "Akta kelahiran yang saya terima namanya apa?",
+  "jawaban": "Dokumen yang kamu terima dan bawa pulang dari Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) namanya Kutipan Akta Kelahiran. Itu memang akta kelahiran resmi, kata \"kutipan\" adalah nama dokumennya.\nSaat mengurus langsung di kantor, surat keterangan kelahiran dari rumah sakit/bidan cukup diserahkan fotokopinya. Yang asli hanya diperlihatkan ke petugas dan tidak diambil oleh Dinas.",
+  "jawaban_latih": "Dokumen yang diterbitkan Disdukcapil dan dibawa pulang adalah Kutipan Akta Kelahiran. Untuk layanan tatap muka, surat keterangan kelahiran diserahkan dalam bentuk fotokopi, sedangkan aslinya hanya diperlihatkan dan tidak ditarik oleh Dinas.",
+  "fakta_kunci": [
+   "kutipan akta kelahiran",
+   "dinas"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/files/2023/1680205946Syarat%20dan%20Prosedur%20Layanan%20Pencatatan%20Sipil.pdf",
+   "https://dukcapil.kemendagri.go.id/blog/read/jangan-tunda-lagi-tak-hanya-bayi-baru-lahir-orang-dewasa-bisa-buat-akta-kelahiran-dengan-mudah"
+  ],
+  "contoh_pertanyaan": [
+   "Dokumen apa yang diterima pemohon setelah pencatatan kelahiran?",
+   "akta lahir yg dikasih tuh namanya apa",
+   "kutipan akta tuh apa",
+   "Kak, kok di aktaku tulisannya 'Kutipan Akta Kelahiran'? Itu asli nggak?",
+   "Apakah surat keterangan lahir asli dari rumah sakit akan diambil oleh Disdukcapil?",
+   "sis kutipan akta tuh apa hehe"
+  ]
+ },
+ {
+  "intent": "akta_lahir_dewasa",
+  "kategori": "layanan",
+  "topik": "Akta kelahiran",
+  "label_saran": "Apakah orang dewasa yang belum punya akta kelahiran masih bisa membuatnya?",
+  "jawaban": "Bisa. Kelahiran memang wajib dilaporkan paling lambat 60 hari setelah lahir, tapi orang dewasa atau lansia yang belum punya akta kelahiran tetap bisa membuatnya.\nSyaratnya pada dasarnya sama dengan akta kelahiran biasa. Jika surat keterangan lahir atau buku nikah orang tua tidak ada, bisa diganti dengan SPTJM (Surat Pernyataan Tanggung Jawab Mutlak, yaitu surat pernyataan yang kamu tanda tangani bahwa data yang diberikan benar).\nDasar aturan: Pasal 27 ayat 1 UU 24/2013 (Undang-Undang Administrasi Kependudukan).",
+  "jawaban_latih": "Kelahiran wajib dilaporkan paling lambat 60 hari (Pasal 27 ayat 1 UU 24/2013), tapi orang dewasa atau lansia yang belum punya akta tetap bisa membuatnya. Syaratnya pada dasarnya sama, dan SPTJM bisa dipakai jika surat keterangan lahir atau buku nikah orang tua tidak ada.",
+  "fakta_kunci": [
+   "60 hari",
+   "dewasa",
+   "lansia"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/blog/read/jangan-tunda-lagi-tak-hanya-bayi-baru-lahir-orang-dewasa-bisa-buat-akta-kelahiran-dengan-mudah"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah orang dewasa yang belum memiliki akta kelahiran masih dapat membuatnya?",
+   "udh tua blm pny akte bs bkin ga",
+   "telat bkin akta lahir gmn",
+   "Kak, aku umur 25 ternyata belum punya akta kelahiran. Masih bisa diurus?",
+   "Ibu saya berusia 60 tahun dan tidak pernah punya akta kelahiran, bagaimana mengurusnya?"
+  ]
+ },
+ {
+  "intent": "akta_lahir_sptjm",
+  "kategori": "layanan",
+  "topik": "Akta kelahiran",
+  "label_saran": "Bagaimana kalau tidak punya surat keterangan lahir atau buku nikah untuk akta kelahiran?",
+  "jawaban": "Bisa, dengan mengisi surat pernyataan pengganti. Surat ini disebut SPTJM (Surat Pernyataan Tanggung Jawab Mutlak), yaitu surat pernyataan yang kamu tanda tangani bahwa data yang diberikan benar.\n1. Tidak punya surat keterangan kelahiran (dari rumah sakit/bidan): isi SPTJM Kebenaran Data Kelahiran (formulir F-2.03), disaksikan 2 orang saksi.\n2. Tidak punya buku nikah/akta perkawinan orang tua: isi SPTJM Kebenaran sebagai Pasangan Suami Istri (formulir F-2.04), juga dengan 2 orang saksi.\nFormulirnya tersedia di Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil).",
+  "jawaban_latih": "Bisa. Jika tidak punya surat keterangan kelahiran, buat SPTJM Kebenaran Data Kelahiran (formulir F-2.03) dengan 2 orang saksi. Jika tidak punya buku nikah/akta perkawinan, buat SPTJM Kebenaran sebagai Pasangan Suami Istri (F-2.04) dengan 2 orang saksi.",
+  "fakta_kunci": [
+   "sptjm",
+   "f-2.03",
+   "f-2.04",
+   "2 orang saksi"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/files/2023/1680205946Syarat%20dan%20Prosedur%20Layanan%20Pencatatan%20Sipil.pdf",
+   "https://dukcapil.kemendagri.go.id/blog/read/jangan-tunda-lagi-tak-hanya-bayi-baru-lahir-orang-dewasa-bisa-buat-akta-kelahiran-dengan-mudah",
+   "https://dukcapil.tapinkab.go.id/pelayanan/akta-kelahiran"
+  ],
+  "contoh_pertanyaan": [
+   "Bagaimana jika tidak memiliki surat keterangan lahir atau buku nikah untuk akta kelahiran?",
+   "ga ada surat lahir bs bkin akte ga",
+   "ortu ga punya buku nikah, akta anak gmn",
+   "Kak, aku lahiran di rumah dibantu dukun, nggak ada surat lahir. Bisa bikin akta?",
+   "Kami menikah siri dan belum punya buku nikah, apakah anak kami tetap bisa dibuatkan akta kelahiran?"
+  ]
+ },
+ {
+  "intent": "akta_lahir_syarat",
+  "kategori": "layanan",
+  "topik": "Akta kelahiran",
+  "label_saran": "Apa saja syarat membuat akta kelahiran anak?",
+  "jawaban": "Syarat membuat akta kelahiran:\n1. Mengisi formulir F-2.01 (formulir pelaporan kelahiran dari Disdukcapil, yaitu Dinas Kependudukan dan Pencatatan Sipil; bisa diminta di kantornya atau diunduh dari situs Disdukcapil daerahmu).\n2. Fotokopi surat keterangan kelahiran dari rumah sakit, puskesmas, dokter, atau bidan. Jika lahir di rumah, surat ini bisa dari kepala desa/lurah.\n3. Fotokopi buku nikah/akta perkawinan orang tua.\n4. Fotokopi KK (Kartu Keluarga).\nFotokopi KTP-el (KTP elektronik) saksi tidak perlu, karena data saksi sudah ditulis di formulir.",
+  "jawaban_latih": "Syarat akta kelahiran: isi formulir F-2.01, fotokopi surat keterangan kelahiran (dari RS, puskesmas, dokter, bidan, atau kepala desa/lurah jika lahir di rumah), fotokopi buku nikah/akta perkawinan orang tua, dan fotokopi KK. Fotokopi KTP-el saksi tidak perlu karena identitas saksi sudah ada di formulir.",
+  "fakta_kunci": [
+   "f-2.01",
+   "surat keterangan kelahiran",
+   "buku nikah",
+   "kk"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/files/2023/1680205946Syarat%20dan%20Prosedur%20Layanan%20Pencatatan%20Sipil.pdf",
+   "https://dukcapil.kemendagri.go.id/blog/read/jangan-tunda-lagi-tak-hanya-bayi-baru-lahir-orang-dewasa-bisa-buat-akta-kelahiran-dengan-mudah",
+   "https://dukcapil.tapinkab.go.id/pelayanan/akta-kelahiran"
+  ],
+  "contoh_pertanyaan": [
+   "Mau bikin akta kelahiran anak, dokumennya apa aja?",
+   "syarat akta lahir apa aj",
+   "bkin akte anak bawa apa",
+   "Kak, anakku baru lahir di bidan, buat akta kelahirannya bawa apa?",
+   "Saya baru melahirkan di rumah sakit, apa saja yang harus disiapkan untuk akta kelahiran?",
+   "mau bkin akte kelahiran anak, dokumennya apa aj"
+  ]
+ },
+ {
+  "intent": "akta_mati_pelapor",
+  "kategori": "layanan",
+  "topik": "Akta kematian",
+  "label_saran": "Siapa saja yang boleh melaporkan kematian?",
+  "jawaban": "Tidak harus anak atau ahli waris. Kematian juga boleh dilaporkan oleh anggota keluarga lain, termasuk ketua RT.\nJika almarhum tidak tercantum di KK (Kartu Keluarga) maupun di data kependudukan, kutipan akta kematian tetap bisa dibuat, hanya saja tanpa NIK (Nomor Induk Kependudukan, nomor 16 digit di KTP/KK).",
+  "jawaban_latih": "Pencatatan kematian tidak harus dilaporkan oleh anak atau ahli waris; keluarga lain termasuk ketua RT juga bisa melaporkan. Jika almarhum tidak tercantum di KK dan database, kutipan akta kematian tetap diterbitkan tanpa NIK.",
+  "fakta_kunci": [
+   "keluarga",
+   "ketua rt",
+   "tanpa nik"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/page/read/kematian"
+  ],
+  "contoh_pertanyaan": [
+   "Siapa yang dapat melaporkan pencatatan kematian?",
+   "akta kematian hrs ahli waris yg urus?",
+   "ponakan blh urus akte kematian ga",
+   "Kak, anaknya almarhum di luar negeri. Aku sebagai keponakan boleh ngurus akta kematiannya?",
+   "Almarhum tidak tercatat di KK manapun, apakah akta kematiannya tetap bisa dibuat?"
+  ]
+ },
+ {
+  "intent": "akta_mati_syarat",
+  "kategori": "layanan",
+  "topik": "Akta kematian",
+  "label_saran": "Apa saja syarat membuat akta kematian?",
+  "jawaban": "Syarat membuat akta kematian:\n1. Mengisi formulir F-2.01 (formulir pelaporan kematian dari Disdukcapil, yaitu Dinas Kependudukan dan Pencatatan Sipil; bisa diminta di kantornya atau diunduh).\n2. Fotokopi surat kematian dari dokter atau kepala desa/lurah. Yang asli cukup diperlihatkan ke petugas.\n3. Fotokopi KK (Kartu Keluarga) atau KTP almarhum.\nUntuk WNI yang tidak tinggal di Indonesia atau warga negara asing, lampirkan juga fotokopi paspor/dokumen perjalanan.",
+  "jawaban_latih": "Syarat akta kematian: isi formulir F-2.01, fotokopi surat kematian dari dokter atau kepala desa/lurah (aslinya hanya diperlihatkan), dan fotokopi KK/KTP almarhum. Untuk WNI bukan penduduk atau orang asing, lampirkan fotokopi dokumen perjalanan.",
+  "fakta_kunci": [
+   "surat kematian",
+   "f-2.01",
+   "kk"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/page/read/kematian",
+   "https://www.antaranews.com/berita/5661824/6-dokumen-kependudukan-yang-bisa-diurus-tanpa-surat-pengantar-rt-rw"
+  ],
+  "contoh_pertanyaan": [
+   "Syarat bikin akta kematian apa aja?",
+   "syarat akta kematian apa",
+   "bkin akte mati bawa apa",
+   "Kak, kakekku baru meninggal. Ngurus akta kematiannya bawa apa?",
+   "Ayah saya meninggal di rumah sakit minggu lalu, dokumen apa yang dibutuhkan untuk akta kematian?",
+   "syarat bkin akte kematian apa aj",
+   "mau nanya dong, bkin akte mati bawa apa ya kak"
+  ]
+ },
+ {
+  "intent": "akta_mati_tidak_jelas",
+  "kategori": "layanan",
+  "topik": "Akta kematian",
+  "label_saran": "Bagaimana mengurus akta kematian jika jenazah tidak ditemukan atau meninggal di luar negeri?",
+  "jawaban": "Untuk kondisi khusus, surat kematian dari dokter/lurah bisa diganti dengan:\n1. Surat keterangan kepolisian, jika identitas almarhum tidak diketahui.\n2. Salinan penetapan pengadilan (keputusan hakim), jika orangnya hilang atau jenazahnya tidak ditemukan.\n3. Surat keterangan kematian dari Perwakilan RI (KBRI/KJRI, kantor perwakilan Indonesia di luar negeri), jika meninggal di luar negeri.",
+  "jawaban_latih": "Untuk kasus khusus, surat kematian diganti dengan: surat keterangan kepolisian jika identitas almarhum tidak jelas, salinan penetapan pengadilan jika orangnya hilang atau jenazah tidak ditemukan, atau surat keterangan kematian dari Perwakilan RI jika meninggal di luar negeri.",
+  "fakta_kunci": [
+   "kepolisian",
+   "penetapan pengadilan",
+   "perwakilan ri"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/page/read/kematian"
+  ],
+  "contoh_pertanyaan": [
+   "Bagaimana pencatatan kematian jika jenazah tidak ditemukan atau meninggal di luar negeri?",
+   "Kalau meninggalnya di luar negeri, akta kematiannya gimana?",
+   "meninggal di luar negri akte nya gmn",
+   "Kak, pamanku TKI meninggal di Malaysia. Akta kematiannya diurus gimana?",
+   "Keluarga kami hilang saat kecelakaan kapal dan jenazahnya tidak ditemukan, bagaimana pencatatan kematiannya?",
+   "klo meninggalnya di luar negeri, akte kematiannya gmn"
+  ]
+ },
+ {
+  "intent": "akta_online",
+  "kategori": "layanan",
+  "topik": "Bentuk akta kelahiran",
+  "label_saran": "Kalau mengurus akta secara online, dokumennya harus bagaimana?",
+  "jawaban": "Untuk pengurusan online (lewat internet), dokumen syarat yang kamu scan atau foto lalu unggah harus dari dokumen aslinya, bukan dari fotokopi.\nAda atau tidaknya layanan online tergantung masing-masing Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) di daerahmu.",
+  "jawaban_latih": "Untuk layanan online/daring, dokumen persyaratan yang di-scan atau difoto untuk diunggah harus dari dokumen aslinya, bukan fotokopi. Ketersediaan layanan online-nya tergantung masing-masing Disdukcapil.",
+  "fakta_kunci": [
+   "online",
+   "aslinya"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/files/2023/1680205946Syarat%20dan%20Prosedur%20Layanan%20Pencatatan%20Sipil.pdf"
+  ],
+  "contoh_pertanyaan": [
+   "Bagaimana ketentuan dokumen untuk pengajuan akta secara online?",
+   "akta online upload fotokopi blh ga",
+   "bkin akte online gmn dokumennya",
+   "Kak, mau urus akta online, boleh foto fotokopiannya aja?",
+   "Saya ingin mengajukan akta kelahiran secara daring, apakah boleh mengunggah scan fotokopi?"
+  ]
+ },
+ {
+  "intent": "biaya_dokumen",
+  "kategori": "layanan",
+  "topik": "Biaya KTP",
+  "label_saran": "Berapa biaya membuat KTP?",
+  "jawaban": "Gratis. Mengurus dan membuat dokumen kependudukan tidak dipungut biaya sama sekali, termasuk membuat baru, mengganti karena rusak/hilang, dan membetulkan data yang salah.\nDasar aturan: Pasal 79A UU 24/2013 (Undang-Undang Administrasi Kependudukan).",
+  "jawaban_latih": "Gratis. Pasal 79A UU 24/2013 menyatakan pengurusan dan penerbitan dokumen kependudukan tidak dipungut biaya, termasuk penerbitan baru, penggantian karena rusak/hilang, dan pembetulan data.",
+  "fakta_kunci": [
+   "gratis",
+   "79a",
+   "tidak dipungut biaya"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://jdih.kemenkeu.go.id/api/download/fulltext/2013/24TAHUN2013UU.htm",
+   "https://jdih.kemenkeu.go.id/api/download/fulltext/2013/24TAHUN2013UUPenjel.pdf",
+   "https://disdukcapil.endekab.go.id/dukcapil/2020-11-08-02-40-07/tentang-adminduk/301-perubahan-undang-undang-nomor-23-tahun-2006-menjadi-undang-undang-nomor-24-tahun-2013-yang-perlu-anda-ketahui"
+  ],
+  "contoh_pertanyaan": [
+   "Berapa biaya pembuatan KTP elektronik?",
+   "Bikin KTP bayar nggak sih?",
+   "bkin ktp brp duit",
+   "ganti ktp ilang bayar ga",
+   "Saya mau mengurus KK dan akta kelahiran sekaligus, apakah ada biaya yang perlu disiapkan?",
+   "bkin ktp bayar ga"
+  ]
+ },
+ {
+  "intent": "biaya_pungli",
+  "kategori": "layanan",
+  "topik": "Biaya KTP",
+  "label_saran": "Bagaimana jika ada petugas yang meminta bayaran untuk mengurus KTP?",
+  "jawaban": "Itu tidak dibenarkan, karena pengurusan dokumen kependudukan gratis. Petugas yang memungut biaya bisa dipidana (dihukum) penjara paling lama 6 tahun dan/atau denda paling banyak Rp75 juta (Pasal 95B UU 24/2013, Undang-Undang Administrasi Kependudukan).\nLaporkan ke Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) setempat atau ke layanan pengaduan resmi di daerahmu.",
+  "jawaban_latih": "Itu tidak dibenarkan. Pasal 95B UU 24/2013 mengancam pejabat/petugas yang memungut biaya pengurusan dokumen kependudukan dengan pidana penjara paling lama 6 tahun dan/atau denda paling banyak Rp75 juta. Laporkan ke Disdukcapil setempat atau kanal pengaduan resmi daerahmu.",
+  "fakta_kunci": [
+   "memungut",
+   "pidana",
+   "95b"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://jdih.kemenkeu.go.id/api/download/fulltext/2013/24TAHUN2013UU.htm",
+   "https://disdukcapil.endekab.go.id/dukcapil/2020-11-08-02-40-07/tentang-adminduk/301-perubahan-undang-undang-nomor-23-tahun-2006-menjadi-undang-undang-nomor-24-tahun-2013-yang-perlu-anda-ketahui"
+  ],
+  "contoh_pertanyaan": [
+   "Bagaimana jika ada petugas yang meminta bayaran untuk mengurus KTP?",
+   "dimintain duit pas ngurus kk, itu pungli bkn",
+   "petugas minta uang pelicin ktp, lapor kmn",
+   "Kak, tadi ada oknum nawarin KTP cepet jadi asal bayar 100 ribu. Itu legal nggak?",
+   "Petugas kelurahan meminta biaya administrasi untuk akta kematian ayah saya. Apakah itu sesuai aturan?"
+  ]
+ },
+ {
+  "intent": "daftar_tanpa_pengantar",
+  "kategori": "layanan",
+  "topik": "Dokumen tanpa pengantar",
+  "label_saran": "Dokumen apa saja yang sekarang tidak perlu surat pengantar RT/RW?",
+  "jawaban": "Menurut Ditjen Dukcapil Kemendagri (Direktorat Jenderal Kependudukan dan Pencatatan Sipil, Kementerian Dalam Negeri), layanan berikut umumnya sudah tidak perlu surat pengantar dari RT/RW:\n1. KTP-el (KTP elektronik)\n2. KK (Kartu Keluarga)\n3. Surat keterangan pindah\n4. Akta kelahiran dan akta kematian\n5. KIA (Kartu Identitas Anak)\nPengecualiannya: warga yang datanya belum tercatat di data kependudukan.",
+  "jawaban_latih": "Menurut Ditjen Dukcapil Kemendagri, layanan yang umumnya tidak lagi memerlukan surat pengantar RT/RW adalah KTP-el, KK, surat keterangan pindah, akta kelahiran, akta kematian, dan KIA. Pengecualiannya untuk penduduk yang belum masuk database kependudukan.",
+  "fakta_kunci": [
+   "ktp-el",
+   "kk",
+   "kia",
+   "akta",
+   "pindah"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://www.antaranews.com/berita/5661824/6-dokumen-kependudukan-yang-bisa-diurus-tanpa-surat-pengantar-rt-rw",
+   "https://www.kompas.com/tren/read/2026/07/20/070000865/daftar-dokumen-kependudukan-yang-masih-perlu-surat-pengantar-rt-rw-apa-saja",
+   "https://news.detik.com/berita/d-7444560/apa-saja-dokumen-kependudukan-yang-perlu-dan-tak-perlu-surat-pengantar"
+  ],
+  "contoh_pertanyaan": [
+   "Dokumen apa aja yang sekarang nggak perlu pengantar RT?",
+   "dokumen yg ga prlu pengantar rt apa aj",
+   "list dokumen bebas pengantar rt",
+   "Kak, biar nggak bolak-balik ke RT, dokumen apa aja sih yang bisa langsung ke Dukcapil?",
+   "Saya ingin mengurus KK, akta anak, dan KTP. Mana yang perlu pengantar RT?",
+   "dokumen apa aj yg sekarang ga prlu pengantar rt"
+  ]
+ },
+ {
+  "intent": "domisili",
+  "kategori": "layanan",
+  "topik": "Surat domisili",
+  "label_saran": "Apakah surat keterangan domisili masih perlu surat pengantar RT?",
+  "jawaban": "Menurut berita media yang mengutip Dukcapil, surat keterangan domisili (surat yang menerangkan tempat tinggalmu saat ini), baik untuk tinggal tetap maupun sementara, masih perlu surat pengantar dari ketua RT.\nSurat ini biasanya diurus di kantor kelurahan/desa, jadi tanyakan cara pastinya ke kelurahan setempat.",
+  "jawaban_latih": "Menurut pemberitaan media yang mengutip Dukcapil, surat keterangan domisili, baik untuk tinggal tetap maupun sementara, masih memerlukan surat pengantar RT. Surat ini biasanya diurus di kelurahan/desa, jadi prosedur pastinya tanyakan ke kelurahan setempat.",
+  "fakta_kunci": [
+   "domisili",
+   "pengantar",
+   "rt"
+  ],
+  "review_status": "needs_review",
+  "sumber": [
+   "https://nasional.kontan.co.id/news/ada-2-dokumen-yang-masih-perlu-surat-pengantar-rtrw-menurut-dukcapil-apa-saja",
+   "https://www.kompas.com/tren/read/2026/07/20/070000865/daftar-dokumen-kependudukan-yang-masih-perlu-surat-pengantar-rt-rw-apa-saja"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah surat keterangan domisili masih memerlukan surat pengantar RT?",
+   "Bikin surat domisili perlu pengantar RT nggak?",
+   "surat domisili prlu pengantar rt ga",
+   "bkin sk domisili dmn",
+   "Kak, aku ngekos dan butuh surat domisili buat kerja. Ngurusnya ke mana?",
+   "bkin surat domisili prlu pengantar rt ga"
+  ]
+ },
+ {
+  "intent": "ganti_foto_boleh",
+  "kategori": "layanan",
+  "topik": "Ganti foto KTP",
+  "label_saran": "Apakah foto KTP boleh diganti?",
+  "jawaban": "Boleh, tapi hanya untuk alasan tertentu. Foto KTP-el (KTP elektronik) bisa diganti jika ada perubahan fisik permanen (perubahan yang menetap), misalnya karena cedera, penyakit, atau operasi, termasuk dari tidak berhijab menjadi berhijab.\nGanti foto hanya karena kartunya rusak saat ini belum dilayani, sesuai kebijakan Ditjen Dukcapil (Direktorat Jenderal Kependudukan dan Pencatatan Sipil).\nDasar aturan: Pasal 13 Permendagri 74/2015 (Peraturan Menteri Dalam Negeri).",
+  "jawaban_latih": "Boleh, tapi hanya dengan alasan tertentu. Menurut Pasal 13 Permendagri 74/2015, foto KTP-el diganti jika ada perubahan fisik permanen (misalnya akibat cedera, penyakit, operasi) termasuk dari tidak berhijab menjadi berhijab. Penggantian foto karena KTP rusak fisik saat ini belum dilaksanakan menurut kebijakan Ditjen Dukcapil.",
+  "fakta_kunci": [
+   "perubahan fisik permanen",
+   "hijab",
+   "permendagri 74/2015"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/blog/read/bolehkah-mengganti-pas-foto-di-ktp-el-begini-aturannya-sesuai-permendagri"
+  ],
+  "contoh_pertanyaan": [
+   "Foto KTP bisa diganti nggak sih?",
+   "foto ktp jelek bs ganti ga",
+   "ganti foto ktp krn skrg pake hijab bisa?",
+   "Kak, foto KTP-ku jelek banget dari SMA, boleh diganti nggak?",
+   "Sekarang saya sudah berhijab, apakah foto KTP-el saya boleh diperbarui?",
+   "foto ktp bs diganti ga"
+  ]
+ },
+ {
+  "intent": "ganti_foto_syarat",
+  "kategori": "layanan",
+  "topik": "Ganti foto KTP",
+  "label_saran": "Apa syarat dan cara mengganti foto KTP?",
+  "jawaban": "Datang ke Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) setempat dengan membawa:\n1. KTP-el lama (KTP elektronik yang lama). Jika hilang, bawa surat kehilangan dari kepolisian.\n2. KK (Kartu Keluarga).\n3. Dokumen pendukung sesuai kondisi, misalnya surat keterangan dokter jika perubahan fisiknya karena alasan medis.\nPetugas akan memotret ulang di tempat, lalu menerbitkan KTP-el baru.",
+  "jawaban_latih": "Datang ke Disdukcapil setempat dengan membawa KTP-el lama (atau surat kehilangan dari kepolisian jika hilang), KK, dan dokumen pendukung sesuai kondisi, misalnya surat keterangan dokter untuk perubahan fisik karena medis. Petugas akan memotret ulang di tempat lalu menerbitkan KTP-el baru.",
+  "fakta_kunci": [
+   "ktp-el lama",
+   "kk",
+   "surat keterangan dokter"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/blog/read/bolehkah-mengganti-pas-foto-di-ktp-el-begini-aturannya-sesuai-permendagri"
+  ],
+  "contoh_pertanyaan": [
+   "Apa syarat dan prosedur penggantian foto KTP elektronik?",
+   "ganti foto ktp bawa apa",
+   "cr ganti foto e ktp gmn",
+   "Kak, setelah operasi wajahku berubah. Ganti foto KTP-nya bawa apa?",
+   "Saya ingin mengganti foto KTP karena sekarang berhijab, dokumen apa yang dibutuhkan?"
+  ]
+ },
+ {
+  "intent": "ikd_aktivasi",
+  "kategori": "layanan",
+  "topik": "IKD",
+  "label_saran": "Bagaimana cara mengaktifkan KTP digital (IKD)?",
+  "jawaban": "Syaratnya: sudah rekam KTP-el (sudah pernah difoto dan diambil sidik jarinya untuk KTP elektronik) dan punya smartphone.\nCaranya:\n1. Unduh aplikasi IKD (Identitas Kependudukan Digital) dari toko aplikasi resmi (Play Store/App Store).\n2. Isi NIK (nomor 16 digit di KTP), email, dan nomor HP.\n3. Lakukan verifikasi wajah lewat kamera HP.\n4. Datang ke Disdukcapil untuk scan QR code (kode kotak-kotak) di meja petugas.\n5. Cek email untuk PIN awal dan tautan aktivasi, lalu ganti PIN-nya.",
+  "jawaban_latih": "Syaratnya sudah rekam KTP-el dan punya smartphone. Caranya: unduh aplikasi IKD dari toko aplikasi resmi, isi NIK, email, dan nomor HP, lakukan verifikasi wajah, lalu datang ke Disdukcapil untuk scan QR code di meja operator. Setelah itu cek email untuk PIN awal dan tautan aktivasi, lalu ganti PIN.",
+  "fakta_kunci": [
+   "rekam ktp-el",
+   "smartphone",
+   "scan qr"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/blog/read/belum-punya-identitas-kependudukan-digital-begini-cara-daftarnya",
+   "https://disdukcapil.serangkota.go.id/detailpost/waspada-penipuan-aktivasi-ikd-kenali-modus-dan-cara-melindungi-data-pribadi"
+  ],
+  "contoh_pertanyaan": [
+   "Bagaimana cara aktivasi Identitas Kependudukan Digital?",
+   "cr aktivasi ikd gmn",
+   "ikd bs aktivasi sndiri dr rumah ga",
+   "Kak, aku mau aktifin IKD, langkah-langkahnya apa aja?",
+   "Saya sudah unduh aplikasi IKD tapi bingung, apa langkah selanjutnya?"
+  ]
+ },
+ {
+  "intent": "ikd_apa",
+  "kategori": "layanan",
+  "topik": "IKD",
+  "label_saran": "Apa itu KTP digital (IKD)?",
+  "jawaban": "IKD (Identitas Kependudukan Digital) adalah KTP dalam bentuk digital di aplikasi HP. Isinya data KTP-el (KTP elektronik), KK (Kartu Keluarga), dan dokumen kependudukan lain.\nLayanan IKD berlaku sejak 1 Juli 2022.",
+  "jawaban_latih": "IKD (Identitas Kependudukan Digital) adalah identitas kependudukan dalam bentuk digital di aplikasi ponsel, yang memuat data KTP-el, KK, dan dokumen kependudukan lain. Layanan IKD berlaku sejak 1 Juli 2022.",
+  "fakta_kunci": [
+   "identitas kependudukan digital",
+   "aplikasi",
+   "1 juli 2022"
+  ],
+  "review_status": "needs_review",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/blog/read/belum-punya-identitas-kependudukan-digital-begini-cara-daftarnya"
+  ],
+  "contoh_pertanyaan": [
+   "Apa yang dimaksud dengan Identitas Kependudukan Digital (IKD)?",
+   "ikd tuh apaan",
+   "ktp digital itu apa",
+   "Kak, temenku bilang sekarang ada KTP digital. Itu maksudnya gimana?",
+   "ikd itu apa",
+   "kak ktp digital itu apa hehe"
+  ]
+ },
+ {
+  "intent": "ikd_pengganti",
+  "kategori": "layanan",
+  "topik": "IKD",
+  "label_saran": "Apakah KTP digital (IKD) bisa menggantikan kartu KTP?",
+  "jawaban": "Data yang saya miliki belum bisa memastikan apakah IKD (Identitas Kependudukan Digital, KTP versi aplikasi HP) sudah bisa menggantikan KTP-el fisik (kartu KTP elektronik) untuk semua keperluan.\nSebaiknya tetap simpan kartu KTP-el fisik, dan tanyakan ke instansi yang meminta identitas apakah IKD diterima.",
+  "jawaban_latih": "Data yang saya miliki belum memastikan apakah IKD sepenuhnya menggantikan KTP-el fisik untuk semua keperluan. Sebaiknya tetap simpan KTP-el fisik dan tanyakan ke instansi yang meminta identitas apakah IKD diterima.",
+  "fakta_kunci": [
+   "ktp-el fisik",
+   "ikd"
+  ],
+  "review_status": "needs_review",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/blog/read/belum-punya-identitas-kependudukan-digital-begini-cara-daftarnya"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah IKD dapat menggantikan KTP elektronik fisik?",
+   "punya ikd ktp asli msh dipake ga",
+   "ikd bs gantiin ktp fisik ga",
+   "Kak, kalau aku udah ada IKD, KTP fisik boleh ditinggal di rumah aja?",
+   "Bank meminta KTP asli padahal saya punya IKD, mana yang berlaku?",
+   "mau nanya dong, ikd bs gantiin ktp fisik ga wkwk"
+  ]
+ },
+ {
+  "intent": "kia_5plus",
+  "kategori": "layanan",
+  "topik": "KIA anak 5 tahun ke atas",
+  "label_saran": "Apa syarat KIA (kartu identitas anak) untuk anak usia 5 tahun ke atas?",
+  "jawaban": "Syarat KIA (Kartu Identitas Anak) untuk anak usia 5 tahun sampai sehari sebelum ulang tahun ke-17:\n1. Fotokopi kutipan akta kelahiran anak (aslinya diperlihatkan ke petugas).\n2. KK (Kartu Keluarga) asli.\n3. KTP-el (KTP elektronik) asli kedua orang tua/wali.\n4. Pas foto anak berwarna ukuran 2x3, sebanyak 2 lembar.\nDi beberapa daerah, seperti Bantul, KK dan KTP-el orang tua tidak perlu diserahkan jika sudah mengisi formulir F-1.02 (formulir pendaftaran dari Disdukcapil).\nDasar aturan: Pasal 3 ayat 3 Permendagri 2/2016 (peraturan tentang KIA).",
+  "jawaban_latih": "Untuk anak 5 sampai 17 tahun kurang satu hari: fotokopi kutipan akta kelahiran (tunjukkan aslinya), KK asli dan KTP-el asli kedua orang tua/wali, serta pas foto anak berwarna 2x3 sebanyak 2 lembar (Pasal 3 ayat 3 Permendagri 2/2016). Di beberapa daerah, seperti Bantul, KK dan KTP-el orang tua tidak perlu diserahkan jika sudah mengisi formulir F-1.02.",
+  "fakta_kunci": [
+   "akta kelahiran",
+   "pas foto",
+   "f-1.02"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://peraturan.bpk.go.id/Download/304718/Permendagri%20Nomor%202%20Tahun%202016.pdf",
+   "https://disdukcapil.bantulkab.go.id/hal/layanan-kartu-identitas-anak-kia-persyaratan-kia"
+  ],
+  "contoh_pertanyaan": [
+   "Apa persyaratan KIA untuk anak berusia 5 tahun ke atas?",
+   "kia anak sd bawa apa",
+   "kia anak 10 thn prlu foto?",
+   "Kak, anakku kelas 3 SD, mau bikin KIA. Fotonya ukuran berapa?",
+   "Anak saya berusia 12 tahun dan belum punya KIA, dokumen apa yang harus saya siapkan?"
+  ]
+ },
+ {
+  "intent": "kia_apa",
+  "kategori": "layanan",
+  "topik": "KIA",
+  "label_saran": "Apa itu KIA (Kartu Identitas Anak)?",
+  "jawaban": "KIA (Kartu Identitas Anak) adalah kartu identitas resmi untuk anak yang berusia di bawah 17 tahun dan belum menikah, semacam KTP untuk anak.\nKIA dibuat oleh Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) kabupaten/kota. Mengurusnya tidak perlu surat pengantar dari RT/RW.",
+  "jawaban_latih": "Kartu Identitas Anak (KIA) adalah identitas resmi untuk anak berusia kurang dari 17 tahun dan belum menikah, diterbitkan oleh Disdukcapil kabupaten/kota. Pengurusannya tidak perlu surat pengantar RT/RW.",
+  "fakta_kunci": [
+   "17 tahun",
+   "belum menikah",
+   "kabupaten/kota"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/files/PERPRES/2018/PERPRES_NO_96_TAHUN_2018.pdf",
+   "https://peraturan.bpk.go.id/Download/304718/Permendagri%20Nomor%202%20Tahun%202016.pdf"
+  ],
+  "contoh_pertanyaan": [
+   "Apa yang dimaksud dengan Kartu Identitas Anak?",
+   "kartu identitas anak buat apa",
+   "Kak, sekolah anakku minta KIA, itu kartu apa sih?",
+   "Apakah anak saya yang berusia 8 tahun perlu memiliki KIA?",
+   "kartu identitas khusus anak tuh maksudnya apa sih?",
+   "sis kartu identitas anak buat apa hehe"
+  ]
+ },
+ {
+  "intent": "kia_balita",
+  "kategori": "layanan",
+  "topik": "KIA anak balita",
+  "label_saran": "Apa syarat KIA (kartu identitas anak) untuk anak di bawah 5 tahun?",
+  "jawaban": "Untuk anak di bawah 5 tahun, KIA (Kartu Identitas Anak) biasanya dibuat sekaligus bersama kutipan akta kelahiran.\nJika sudah punya akta tapi belum punya KIA, syaratnya:\n1. Fotokopi kutipan akta kelahiran (aslinya diperlihatkan ke petugas).\n2. KK (Kartu Keluarga) asli orang tua/wali.\n3. KTP-el (KTP elektronik) asli kedua orang tua/wali.\nTidak perlu pas foto.",
+  "jawaban_latih": "Untuk anak di bawah 5 tahun, KIA diterbitkan bersamaan dengan kutipan akta kelahiran. Jika sudah punya akta tapi belum punya KIA, syaratnya fotokopi kutipan akta kelahiran (tunjukkan aslinya), KK asli orang tua/wali, dan KTP-el asli kedua orang tua/wali. Tidak perlu pas foto.",
+  "fakta_kunci": [
+   "akta kelahiran",
+   "kk",
+   "ktp-el"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://peraturan.bpk.go.id/Download/304718/Permendagri%20Nomor%202%20Tahun%202016.pdf",
+   "https://disdukcapil.bantulkab.go.id/hal/layanan-kartu-identitas-anak-kia-persyaratan-kia"
+  ],
+  "contoh_pertanyaan": [
+   "Apa persyaratan KIA untuk anak berusia di bawah 5 tahun?",
+   "Syarat bikin KIA buat balita apa aja?",
+   "kia bayi syaratnya apa",
+   "Kak, anakku 2 tahun udah punya akta, mau bikin KIA bawa apa?",
+   "Anak saya baru lahir, apakah KIA-nya bisa langsung dibuat bersama akta kelahiran?",
+   "syarat bkin kia buat balita apa aj"
+  ]
+ },
+ {
+  "intent": "kia_hilang_rusak",
+  "kategori": "layanan",
+  "topik": "KIA",
+  "label_saran": "Bagaimana cara mengganti KIA (kartu identitas anak) yang hilang atau rusak?",
+  "jawaban": "KIA (Kartu Identitas Anak) bisa dibuat ulang:\n1. Jika hilang: lampirkan surat keterangan kehilangan dari kepolisian.\n2. Jika rusak: bawa KIA yang rusak tersebut.\nDasar aturan: Pasal 4 dan 5 Permendagri 2/2016 (peraturan tentang KIA).",
+  "jawaban_latih": "KIA yang hilang diterbitkan kembali dengan melampirkan surat keterangan kehilangan dari kepolisian, sedangkan KIA yang rusak dengan melampirkan KIA yang rusak (Pasal 4 dan 5 Permendagri 2/2016).",
+  "fakta_kunci": [
+   "kepolisian",
+   "kia yang rusak"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://peraturan.bpk.go.id/Download/304718/Permendagri%20Nomor%202%20Tahun%202016.pdf",
+   "https://disdukcapil.bantulkab.go.id/hal/layanan-kartu-identitas-anak-kia-persyaratan-kia"
+  ],
+  "contoh_pertanyaan": [
+   "Bagaimana cara mengganti KIA yang hilang atau rusak?",
+   "KIA anak hilang, gimana gantinya?",
+   "kia ilang gmn",
+   "Kak, KIA anakku ilang pas study tour. Gantinya gimana?",
+   "KIA anak saya rusak tercuci, dokumen apa yang diperlukan untuk menggantinya?",
+   "kia anak ilang, gmn gantinya",
+   "kia anak gw ilang, gantinya gmn",
+   "KIA anak saya patah, bisa diganti?",
+   "Apa syarat penggantian KIA yang rusak?"
+  ]
+ },
+ {
+  "intent": "kia_masa_berlaku",
+  "kategori": "layanan",
+  "topik": "KIA",
+  "label_saran": "Berapa lama KIA (kartu identitas anak) berlaku?",
+  "jawaban": "Masa berlaku KIA (Kartu Identitas Anak):\n1. KIA anak di bawah 5 tahun berlaku sampai anak berusia 5 tahun.\n2. KIA anak usia 5 tahun ke atas berlaku sampai 17 tahun kurang satu hari (sehari sebelum ulang tahun ke-17).\nDasar aturan: Pasal 7 Permendagri 2/2016 (peraturan tentang KIA).",
+  "jawaban_latih": "KIA untuk anak di bawah 5 tahun berlaku sampai anak berusia 5 tahun. KIA untuk anak usia 5 tahun ke atas berlaku sampai anak berusia 17 tahun kurang satu hari (Pasal 7 Permendagri 2/2016).",
+  "fakta_kunci": [
+   "5 tahun",
+   "17 tahun kurang satu hari"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://peraturan.bpk.go.id/Download/304718/Permendagri%20Nomor%202%20Tahun%202016.pdf",
+   "https://disdukcapil.bantulkab.go.id/hal/layanan-kartu-identitas-anak-kia-persyaratan-kia"
+  ],
+  "contoh_pertanyaan": [
+   "Berapa lama masa berlaku Kartu Identitas Anak?",
+   "KIA berlaku sampai kapan?",
+   "kia brlaku smp kpn",
+   "kia anak 4 thn hrs diganti ga",
+   "Kak, anakku punya KIA dari bayi, sekarang udah 5 tahun. Harus bikin baru?",
+   "KIA anak saya dibuat saat usia 3 tahun, apakah masih berlaku sekarang usianya 6 tahun?",
+   "mau nanya dong, kia anak 4 thn hrs diganti ga"
+  ]
+ },
+ {
+  "intent": "kk_cetak_sendiri",
+  "kategori": "layanan",
+  "topik": "Penerbitan KK",
+  "label_saran": "Apakah Kartu Keluarga bisa dicetak sendiri?",
+  "jawaban": "Informasi soal mencetak KK (Kartu Keluarga) sendiri di kertas HVS (kertas putih biasa) dengan tanda tangan elektronik belum bisa saya pastikan dari sumber resmi.\nSilakan tanyakan ke Dukcapil/Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) setempat apakah KK bisa dikirim dalam bentuk PDF untuk dicetak sendiri.",
+  "jawaban_latih": "Informasi tentang cetak KK sendiri di kertas HVS dan tanda tangan elektronik belum saya verifikasi dari sumber resmi di dataset ini. Silakan tanyakan ke Disdukcapil setempat apakah KK bisa dikirim dalam bentuk PDF untuk dicetak sendiri.",
+  "fakta_kunci": [
+   "kertas hvs",
+   "dukcapil"
+  ],
+  "review_status": "needs_review",
+  "sumber": [
+   "https://www.antaranews.com/berita/5661824/6-dokumen-kependudukan-yang-bisa-diurus-tanpa-surat-pengantar-rt-rw"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah Kartu Keluarga dapat dicetak sendiri?",
+   "KK bisa diprint sendiri nggak?",
+   "kk bs diprint sndiri ga",
+   "kk skrg kertas hvs ya?",
+   "Disdukcapil mengirim KK lewat email, apakah sah jika saya cetak sendiri?",
+   "kk bs diprint sendiri ga",
+   "mau nanya dong, kk skrg kertas hvs ya? dong"
+  ]
+ },
+ {
+  "intent": "kk_hilang_syarat",
+  "kategori": "layanan",
+  "topik": "KK hilang",
+  "label_saran": "Kartu Keluarga saya hilang, apa yang harus disiapkan?",
+  "jawaban": "Untuk mengganti KK (Kartu Keluarga) yang hilang, siapkan:\n1. Surat keterangan hilang dari kepolisian.\n2. KTP-el (KTP elektronik).\nLalu ajukan ke Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) setempat. Ini berbeda dengan KK rusak, yang cukup membawa KK yang rusak itu.\nDasar aturan: Pasal 13 Perpres 96/2018 (Peraturan Presiden tentang syarat pendaftaran penduduk).",
+  "jawaban_latih": "Untuk WNI, penggantian KK yang hilang memerlukan surat keterangan hilang dari kepolisian dan KTP-el (Pasal 13 Perpres 96/2018). Ajukan penggantian ke Disdukcapil setempat. Ini berbeda dari KK rusak, yang menggunakan KK yang rusak sebagai dokumen pendukung.",
+  "fakta_kunci": [
+   "kepolisian",
+   "ktp-el"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/files/PERPRES/2018/PERPRES_NO_96_TAHUN_2018.pdf",
+   "https://kependudukancapil.jakarta.go.id/pelayanan-suku-dinas-dukcapil-kota-kabupaten/"
+  ],
+  "contoh_pertanyaan": [
+   "KK saya hilang. Dokumen apa yang harus disiapkan?",
+   "kk ilang entah kmn, mesti bawa apa min?",
+   "kartu keluarga ga ketemu, perlu lapor polisi dulu ga?",
+   "Kak, KK asli saya hilang, bagaimana cara mengajukan penggantinya?",
+   "Setelah pindahan rumah, KK asli kami tidak ditemukan. Apa syarat penggantian KK hilang untuk WNI?",
+   "mau bikin pengganti kk ilang, syaratnya apa aja ya",
+   "kk gw ilang bukan rusak, ngurus gantinya pake apa?",
+   "kk gw ilang, gimana gantinya",
+   "kk raib, perlu surat kehilangan polisi ga buat ganti?",
+   "Kak, KK kami hanyut kebawa banjir dan gak ketemu lagi. Syarat gantinya apa?",
+   "Bagaimana cara mengurus Kartu Keluarga pengganti karena hilang?",
+   "KK saya entah di mana, sudah dicari tidak ketemu. Gimana ganti KK-nya?",
+   "Tas berisi KK saya dicuri di terminal. Dokumen apa yang dibutuhkan untuk KK pengganti?"
+  ]
+ },
+ {
+  "intent": "kk_pengantar",
+  "kategori": "layanan",
+  "topik": "Penerbitan KK",
+  "label_saran": "Apakah membuat Kartu Keluarga perlu surat pengantar RT/RW?",
+  "jawaban": "Tidak perlu. Membuat KK (Kartu Keluarga), baik baru, mengubah data, maupun menambah anggota keluarga, bisa langsung diurus di Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) tanpa surat pengantar dari RT/RW.\nPengecualiannya: warga yang belum punya NIK (Nomor Induk Kependudukan) dan baru akan didaftarkan ke data kependudukan.\nDasar aturan: Perpres 96/2018 (Peraturan Presiden tentang syarat pendaftaran penduduk).",
+  "jawaban_latih": "Tidak perlu. Penerbitan KK, baik baru, perubahan data, maupun penambahan anggota keluarga, dapat diurus langsung di Disdukcapil tanpa surat pengantar RT/RW, mengacu pada Perpres 96/2018. Pengecualiannya: penduduk yang belum punya NIK dan baru akan dimasukkan ke database.",
+  "fakta_kunci": [
+   "kk",
+   "pengantar"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://www.antaranews.com/berita/5661824/6-dokumen-kependudukan-yang-bisa-diurus-tanpa-surat-pengantar-rt-rw",
+   "https://www.kompas.com/tren/read/2026/07/20/070000865/daftar-dokumen-kependudukan-yang-masih-perlu-surat-pengantar-rt-rw-apa-saja"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah penerbitan Kartu Keluarga memerlukan surat pengantar RT/RW?",
+   "bkin kk prlu pengantar rt ga",
+   "urus kk hrs ke rt dulu?",
+   "Kak, mau tambah anak di KK, perlu minta surat RT dulu nggak?",
+   "Saya baru menikah dan ingin membuat KK sendiri, apakah perlu pengantar dari kelurahan?"
+  ]
+ },
+ {
+  "intent": "kk_rusak_syarat",
+  "kategori": "layanan",
+  "topik": "KK rusak",
+  "label_saran": "Kartu Keluarga saya rusak, bagaimana cara menggantinya?",
+  "jawaban": "Untuk mengganti KK (Kartu Keluarga) yang rusak, siapkan:\n1. KK yang rusak tersebut.\n2. KTP-el (KTP elektronik).\nBawa keduanya ke Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) setempat. Surat keterangan hilang dari kepolisian hanya untuk KK yang hilang, bukan untuk KK yang masih ada tapi rusak.\nDasar aturan: Pasal 13 Perpres 96/2018 (Peraturan Presiden tentang syarat pendaftaran penduduk).",
+  "jawaban_latih": "Untuk WNI, penggantian KK yang rusak memerlukan KK yang rusak dan KTP-el (Pasal 13 Perpres 96/2018). Bawa KK yang rusak saat mengajukan penggantian ke Disdukcapil setempat. Surat keterangan hilang dari kepolisian digunakan jika KK hilang, bukan sebagai syarat KK yang masih ada tetapi rusak.",
+  "fakta_kunci": [
+   "kk yang rusak",
+   "ktp-el"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/files/PERPRES/2018/PERPRES_NO_96_TAHUN_2018.pdf",
+   "https://kependudukancapil.jakarta.go.id/pelayanan-suku-dinas-dukcapil-kota-kabupaten/"
+  ],
+  "contoh_pertanyaan": [
+   "KK rusak tetapi masih ada. Apa syarat penggantiannya?",
+   "kk sobek masih ada sisanya, bawa apa buat ganti?",
+   "kk basah tulisannya pudar, ngurus yg baru gmn min?",
+   "Kak, KK saya robek, bukan hilang. Dokumen apa yang perlu dibawa?",
+   "Kartu Keluarga kami rusak terkena banjir dan lembarannya masih disimpan. Apa syarat penggantian KK bagi WNI?",
+   "kk gw rusak nih bukan ilang, perlu surat polisi ga?",
+   "kartu keluarga lecek parah tp masih ada, gantinya pake syarat apa?",
+   "kk gw sobek, gantinya gmn",
+   "kk dimakan rayap tp msh ada, ngurusnya gmn",
+   "Kak, KK-ku kesiram kopi sampai tulisannya ga kebaca. Ganti pakai apa?",
+   "Dokumen apa yang dibutuhkan untuk mengganti Kartu Keluarga yang rusak?",
+   "KK saya robek jadi dua, masih saya simpan. Syarat ganti apa ya?",
+   "Anak saya mencoret-coret KK asli sampai rusak. Bagaimana mengurus penggantinya?"
+  ]
+ },
+ {
+  "intent": "kk_tambah_anak",
+  "kategori": "layanan",
+  "topik": "Perubahan data KK",
+  "label_saran": "Bagaimana cara memasukkan anak yang baru lahir ke Kartu Keluarga?",
+  "jawaban": "Menambahkan anak ke KK (Kartu Keluarga) termasuk perubahan data, jadi syaratnya KK lama dan bukti kejadiannya.\nUntuk bayi baru lahir, biasanya diurus sekalian dengan akta kelahiran, dengan surat keterangan kelahiran dari rumah sakit/bidan sebagai buktinya.",
+  "jawaban_latih": "Penambahan anak ke KK termasuk perubahan data, jadi syaratnya KK lama dan bukti peristiwanya. Untuk bayi baru lahir, biasanya diurus bersama akta kelahiran dengan surat keterangan kelahiran sebagai bukti.",
+  "fakta_kunci": [
+   "kk lama",
+   "akta kelahiran"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/files/PERPRES/2018/PERPRES_NO_96_TAHUN_2018.pdf",
+   "https://dukcapil.kemendagri.go.id/files/2023/1680205946Syarat%20dan%20Prosedur%20Layanan%20Pencatatan%20Sipil.pdf"
+  ],
+  "contoh_pertanyaan": [
+   "Bagaimana cara menambahkan anak yang baru lahir ke dalam KK?",
+   "masukin anak ke kk gmn",
+   "bayi br lahir dimasukin kk bawa apa",
+   "Kak, anakku baru lahir minggu lalu. Gimana caranya masuk KK?",
+   "Istri saya baru melahirkan, apa saja yang perlu diurus agar anak tercatat di KK?"
+  ]
+ },
+ {
+  "intent": "kk_ubah_syarat",
+  "kategori": "layanan",
+  "topik": "Perubahan data KK",
+  "label_saran": "Apa syarat mengubah data di Kartu Keluarga?",
+  "jawaban": "Syarat membuat KK (Kartu Keluarga) baru karena ada perubahan data:\n1. KK lama.\n2. Surat keterangan atau bukti perubahan, sesuai kejadiannya.\nContoh buktinya: SKPWNI (surat keterangan pindah), paspor, akta kelahiran, akta perkawinan, atau ijazah.\nDasar aturan: Pasal 12 Perpres 96/2018 (Peraturan Presiden tentang syarat pendaftaran penduduk).",
+  "jawaban_latih": "Syarat penerbitan KK karena perubahan data: KK lama dan surat keterangan/bukti perubahan peristiwa kependudukan atau peristiwa penting (Pasal 12 Perpres 96/2018). Contoh buktinya: SKPWNI, paspor, akta kelahiran, akta perkawinan, ijazah.",
+  "fakta_kunci": [
+   "kk lama",
+   "bukti perubahan"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/files/PERPRES/2018/PERPRES_NO_96_TAHUN_2018.pdf",
+   "https://kependudukancapil.jakarta.go.id/pelayanan-suku-dinas-dukcapil-kota-kabupaten/"
+  ],
+  "contoh_pertanyaan": [
+   "Apa persyaratan penerbitan KK karena perubahan data?",
+   "Mau ubah data di KK syaratnya apa?",
+   "ubah data kk syaratnya apa",
+   "ganti data di kk bawa apa",
+   "Status di KK saya masih belum kawin padahal sudah menikah, bagaimana memperbaruinya?",
+   "mau perbaruin isi kartu keluarga nih min, bukti pendukungnya apa aja?",
+   "mau ganti status di kk dr lajang ke kawin, bawa apa",
+   "Apa dokumen yang diperlukan untuk memperbarui data pendidikan di KK?",
+   "Kak, pekerjaan di KK-ku masih pelajar padahal udah kerja. Syarat ubahnya apa?",
+   "Mau update golongan darah di KK, syaratnya apa saja?"
+  ]
+ },
+ {
+  "intent": "klarifikasi_akta",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Akta apa yang mau diurus? Akta kelahiran atau akta kematian? Kalau akta kelahiran, untuk bayi yang baru lahir atau untuk orang dewasa yang belum punya?",
+  "jawaban_latih": "Akta apa yang mau diurus? Akta kelahiran atau akta kematian? Kalau akta kelahiran, untuk bayi baru lahir atau orang dewasa yang belum punya?",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "mau ngurus akta"
+  ]
+ },
+ {
+  "intent": "klarifikasi_bayi",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Selamat ya! Mau mengurus akta kelahiran, memasukkan anak ke KK (Kartu Keluarga), atau KIA (Kartu Identitas Anak)? Ketiganya bisa diurus berdekatan.",
+  "jawaban_latih": "Selamat ya! Mau mengurus akta kelahiran, memasukkan anak ke KK, atau KIA? Ketiganya bisa diurus berdekatan.",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "anak baru lahir"
+  ]
+ },
+ {
+  "intent": "klarifikasi_biaya",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Maksudnya biaya mengurus dokumen kependudukan seperti KTP, KK (Kartu Keluarga), KIA (Kartu Identitas Anak), atau akta? Kalau iya, semuanya gratis. Mau tanya dokumen yang mana?",
+  "jawaban_latih": "Maksudnya untuk mengurus dokumen kependudukan seperti KTP-el, KK, KIA, atau akta? Kalau iya, semuanya gratis. Mau tanya dokumen yang mana?",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "bayar ga"
+  ]
+ },
+ {
+  "intent": "klarifikasi_durasi",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Mau tahu lama proses dokumen apa? KTP, KK (Kartu Keluarga), KIA (Kartu Identitas Anak), akta, atau surat pindah? Lamanya juga tergantung Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) setempat.",
+  "jawaban_latih": "Proses dokumen apa yang dimaksud? KTP-el, KK, KIA, akta, atau surat pindah? Waktu penyelesaiannya juga tergantung Disdukcapil setempat.",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "berapa lama?"
+  ]
+ },
+ {
+  "intent": "klarifikasi_foto",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Maksudnya soal foto apa ya? Ganti foto di KTP, atau pas foto untuk syarat KIA (Kartu Identitas Anak) anak usia 5 tahun ke atas?",
+  "jawaban_latih": "Maksudnya soal foto apa ya? Ganti foto di KTP-el, atau pas foto untuk syarat KIA anak usia 5 tahun ke atas?",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "foto"
+  ]
+ },
+ {
+  "intent": "klarifikasi_hilang",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Dokumen apa yang hilang? KTP, KK (Kartu Keluarga), KIA (Kartu Identitas Anak), atau akta? Syarat penggantiannya berbeda untuk tiap dokumen.",
+  "jawaban_latih": "Dokumen apa yang hilang? KTP-el, KK, KIA, atau akta? Syarat penggantiannya berbeda untuk tiap dokumen.",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "dokumen saya hilang",
+   "ada yg ilang nih min, gmn",
+   "Dokumen kependudukan saya hilang semua, mulai dari mana?",
+   "surat2 penting gw ilang"
+  ]
+ },
+ {
+  "intent": "klarifikasi_ikd",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Mau tanya apa soal IKD (Identitas Kependudukan Digital, KTP versi aplikasi HP)? Pengertiannya, cara aktivasinya, atau penipuan yang mengatasnamakan aktivasi IKD?",
+  "jawaban_latih": "Mau tanya apa soal IKD? Pengertiannya, cara aktivasinya, atau waspada penipuan yang mengatasnamakan aktivasi IKD?",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "ikd"
+  ]
+ },
+ {
+  "intent": "klarifikasi_kia",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Kartu apa yang dimaksud? Untuk anak di bawah 17 tahun yang belum menikah, biasanya KIA (Kartu Identitas Anak). Berapa usia anaknya? Syarat KIA berbeda untuk anak di bawah 5 tahun dan 5 tahun ke atas.",
+  "jawaban_latih": "Kartu apa yang dimaksud? Untuk anak di bawah 17 tahun yang belum menikah biasanya KIA. Berapa usia anaknya? Syarat KIA berbeda untuk usia di bawah 5 tahun dan 5 tahun ke atas.",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "anak saya mau bikin kartu",
+   "bikin kia"
+  ]
+ },
+ {
+  "intent": "klarifikasi_kk",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Masalah KK (Kartu Keluarga)-nya seperti apa ya? Apakah hilang, rusak, ada data yang salah, perlu menambah anggota keluarga, atau mau pisah KK?",
+  "jawaban_latih": "Masalahnya seperti apa ya? Apakah KK hilang, rusak, ada data yang salah, perlu menambah anggota keluarga, atau mau pisah KK?",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "KK saya bermasalah",
+   "kk",
+   "ada masalah sama kartu keluarga",
+   "mau ngurus kk nih"
+  ]
+ },
+ {
+  "intent": "klarifikasi_ktp",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Maksudnya KTP yang mana dulu nih: bikin KTP baru, KTP hilang, KTP rusak, ganti foto, atau KTP untuk warga negara asing? Biar jawabannya pas.",
+  "jawaban_latih": "Maksudnya KTP yang mana dulu nih: bikin KTP baru, KTP hilang, KTP rusak, ganti foto, atau KTP untuk WNA? Biar jawabannya pas.",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "ktp gmn",
+   "Bagaimana cara mengurus KTP?",
+   "ktp",
+   "mau ngurus ktp min",
+   "Saya ada perlu soal KTP."
+  ]
+ },
+ {
+  "intent": "klarifikasi_meninggal",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Turut berduka cita. Apakah ingin mengurus akta kematian? Kalau iya, saya bisa jelaskan syaratnya. Atau ada urusan lain, seperti perubahan KK (Kartu Keluarga)?",
+  "jawaban_latih": "Turut berduka cita. Apakah ingin mengurus akta kematian? Kalau iya, saya bisa jelaskan syaratnya. Atau ada urusan lain seperti perubahan KK?",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "ada yg meninggal"
+  ]
+ },
+ {
+  "intent": "klarifikasi_nikah",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Ada yang mau diurus terkait pernikahan? Misalnya mengubah status di KK (Kartu Keluarga)/KTP, atau membuat KK baru setelah menikah? Pencatatan nikah untuk yang beragama Islam sendiri dilakukan di KUA (Kantor Urusan Agama).",
+  "jawaban_latih": "Ada yang mau diurus terkait pernikahan? Misalnya perubahan status di KK/KTP-el, atau membuat KK baru setelah menikah? Pencatatan nikah untuk muslim sendiri dilakukan di KUA.",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "nikah"
+  ]
+ },
+ {
+  "intent": "klarifikasi_online",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Dokumen apa yang mau diurus secara online? Ada atau tidaknya layanan online berbeda di tiap Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil), tapi saya bisa jelaskan syarat dokumennya.",
+  "jawaban_latih": "Pengurusan dokumen apa yang mau dilakukan online? Ketersediaan layanan online berbeda di tiap Disdukcapil, tapi aku bisa jelasin syarat dokumennya.",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "online bisa?"
+  ]
+ },
+ {
+  "intent": "klarifikasi_orang_tua",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Dokumen apa yang ingin diurus untuk orang tua? Misalnya KTP, KK (Kartu Keluarga), akta kelahiran yang belum ada, atau akta kematian? Ceritakan sedikit kondisinya agar saya bisa bantu.",
+  "jawaban_latih": "Dokumen apa yang ingin diurus untuk orang tua? Misalnya KTP-el, KK, akta kelahiran yang belum ada, atau akta kematian? Ceritakan sedikit kondisinya agar saya bisa bantu.",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "Saya mau mengurus dokumen untuk orang tua saya"
+  ]
+ },
+ {
+  "intent": "klarifikasi_pengantar",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Untuk dokumen apa? KTP, KK (Kartu Keluarga), KIA (Kartu Identitas Anak), akta, dan surat pindah umumnya tidak perlu surat pengantar dari RT/RW, tapi ada pengecualiannya. Dokumen mana yang mau diurus?",
+  "jawaban_latih": "Untuk dokumen apa? KTP-el, KK, KIA, akta, dan surat pindah umumnya tidak perlu pengantar RT/RW, tapi ada pengecualian. Dokumen mana yang mau diurus?",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "perlu pengantar ga?"
+  ]
+ },
+ {
+  "intent": "klarifikasi_pindah",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Mau pindah ke luar kota/kabupaten, atau hanya pindah alamat di kota yang sama? Lalu yang pindah sekeluarga, sendiri, atau anak di bawah 17 tahun?",
+  "jawaban_latih": "Mau pindah domisili ke luar kota/kabupaten, atau cuma pindah alamat di kota yang sama? Dan yang pindah sekeluarga, sendiri, atau anak di bawah 17 tahun?",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "pindah ngurusnya gmn"
+  ]
+ },
+ {
+  "intent": "klarifikasi_sapaan",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Halo! Saya asisten layanan administrasi kependudukan. Mau tanya soal apa? Misalnya KTP, KK (Kartu Keluarga), KIA (Kartu Identitas Anak), akta kelahiran, akta kematian, IKD (KTP digital), atau pindah domisili (pindah alamat).",
+  "jawaban_latih": "Halo! Saya asisten layanan administrasi kependudukan. Mau tanya soal apa? Misalnya KTP-el, KK, KIA, akta kelahiran, akta kematian, IKD, atau pindah domisili.",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "halo",
+   "p",
+   "halo, apa kabar?",
+   "kamu siapa sih?",
+   "selamat siang min"
+  ]
+ },
+ {
+  "intent": "klarifikasi_syarat",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Boleh tahu syarat untuk dokumen apa? Misalnya KTP baru, KTP hilang/rusak, KK (Kartu Keluarga), KIA (Kartu Identitas Anak), akta kelahiran, akta kematian, atau pindah domisili (pindah alamat).",
+  "jawaban_latih": "Boleh tahu syarat untuk dokumen apa yang dimaksud? Misalnya KTP-el baru, KTP hilang/rusak, KK, KIA, akta kelahiran, akta kematian, atau pindah domisili.",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "syaratnya apa?"
+  ]
+ },
+ {
+  "intent": "klarifikasi_ubah_data",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Data apa yang ingin diubah, dan di dokumen apa: KK (Kartu Keluarga) atau KTP? Misalnya nama, alamat, atau status perkawinan. Ceritakan jenis perubahannya tanpa mengirim NIK atau nomor KK, ya.",
+  "jawaban_latih": "Data apa yang ingin diubah dan pada dokumen apa: KK atau KTP-el? Misalnya nama, alamat, atau status perkawinan. Jelaskan jenis perubahannya tanpa mengirim NIK atau nomor KK agar saya tidak salah menjelaskan.",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "ganti data",
+   "mau benerin data kk ktp",
+   "Mau ubah data, caranya bagaimana?",
+   "mau ubah biodata",
+   "data gw salah min",
+   "Saya ingin memperbaiki data diri, bagaimana caranya?",
+   "biodata sy ada yg keliru nih",
+   "ganti data diri prosesnya gmn"
+  ]
+ },
+ {
+  "intent": "klarifikasi_wakil",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Untuk mengurus apa ya? Perekaman KTP-el (KTP elektronik) harus datang sendiri karena wajah, sidik jari, dan mata akan difoto/dipindai. Tapi pelaporan seperti akta kematian bisa dilakukan keluarga. Dokumen mana yang dimaksud?",
+  "jawaban_latih": "Untuk mengurus apa ya? Perekaman KTP-el harus datang sendiri karena ada perekaman biometrik, tapi pelaporan seperti akta kematian bisa dilakukan keluarga. Dokumen mana yang dimaksud?",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "bisa diwakilin ga"
+  ]
+ },
+ {
+  "intent": "klarifikasi_wna",
+  "kategori": "klarifikasi",
+  "topik": "Klarifikasi",
+  "jawaban": "Bisa untuk apa ya? Misalnya KTP-el (KTP elektronik) bagi warga negara asing yang punya izin tinggal tetap, atau KIA (Kartu Identitas Anak) untuk anak warga negara asing? Kasih tahu dokumen yang dimaksud.",
+  "jawaban_latih": "Bisa untuk apa ya? Misalnya KTP-el bagi WNA pemegang izin tinggal tetap, atau KIA untuk anak orang asing? Kasih tahu dokumen yang dimaksud.",
+  "fakta_kunci": [],
+  "review_status": "unverified",
+  "sumber": [
+   "pertanyaan klarifikasi (tidak memuat klaim baru; fakta ringkas mengikuti baris verified)"
+  ],
+  "contoh_pertanyaan": [
+   "WNA bisa?"
+  ]
+ },
+ {
+  "intent": "ktp_baru_prosedur",
+  "kategori": "layanan",
+  "topik": "KTP baru",
+  "label_saran": "Bagaimana cara membuat KTP baru?",
+  "jawaban": "Alur membuat KTP-el (KTP elektronik) baru:\n1. Isi formulir F-1.02 (formulir pendaftaran data kependudukan, tersedia di Disdukcapil).\n2. Lampirkan fotokopi KK (Kartu Keluarga).\n3. Lakukan perekaman biometrik di Disdukcapil, yaitu foto wajah, sidik jari, dan iris mata.\n4. Setelah itu Dinas mencetak KTP-el kamu.\nLayanan ini gratis. Disdukcapil = Dinas Kependudukan dan Pencatatan Sipil.",
+  "jawaban_latih": "Alurnya: isi formulir F-1.02, lampirkan fotokopi KK, lalu lakukan perekaman biometrik (foto, sidik jari, iris) di Disdukcapil. Setelah itu Dinas menerbitkan KTP-el. Layanan ini gratis.",
+  "fakta_kunci": [
+   "f-1.02",
+   "kk",
+   "perekaman"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.ngawikab.go.id/wp-content/uploads/2025/01/SP-KTP-Baru-WNI-a01.pdf",
+   "https://dukcapil.kemendagri.go.id/files/PERPRES/2018/PERPRES_NO_96_TAHUN_2018.pdf"
+  ],
+  "contoh_pertanyaan": [
+   "Bagaimana prosedur pembuatan KTP elektronik baru?",
+   "cara bikin e-ktp gmn sih step2nya",
+   "bikin ktp prosesnya gmn y kak",
+   "Kak, kalau mau bikin KTP itu tahapannya gimana dari awal?",
+   "Anak saya baru 17 tahun dan belum pernah rekam, langkah-langkah membuat KTP-nya bagaimana?",
+   "mau nanya dong, bikin ktp prosesnya gmn y kak makasih"
+  ]
+ },
+ {
+  "intent": "ktp_baru_syarat",
+  "kategori": "layanan",
+  "topik": "KTP baru",
+  "label_saran": "Apa saja syarat membuat KTP baru?",
+  "jawaban": "Syarat membuat KTP-el (KTP elektronik) baru untuk WNI:\n1. Sudah berusia 17 tahun, atau sudah/pernah menikah.\n2. Membawa fotokopi KK (Kartu Keluarga).\nTidak perlu surat pengantar dari RT/RW.\nDasar aturan: Pasal 15 Perpres 96/2018 (Peraturan Presiden tentang syarat pendaftaran penduduk).",
+  "jawaban_latih": "Syarat KTP-el baru untuk WNI ada dua: sudah berusia 17 tahun atau sudah/pernah kawin, dan membawa KK (fotokopi KK). Dasarnya Pasal 15 Perpres 96/2018. Tidak perlu surat pengantar RT/RW.",
+  "fakta_kunci": [
+   "17 tahun",
+   "kk"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/files/PERPRES/2018/PERPRES_NO_96_TAHUN_2018.pdf",
+   "https://setkab.go.id/perpres-no-962018-inilah-tata-cara-dan-persyaratan-penerbitan-ktp-el/",
+   "https://kependudukancapil.jakarta.go.id/pelayanan-suku-dinas-dukcapil-kota-kabupaten/"
+  ],
+  "contoh_pertanyaan": [
+   "Apa saja persyaratan penerbitan KTP elektronik baru bagi WNI?",
+   "syarat bkin ktp baru apa aja min",
+   "ktp pertama kali bawa apa aja sih",
+   "Halo kak, aku mau bikin KTP nih, perlu nyiapin apa aja?",
+   "Bulan depan saya ulang tahun ke-17, dokumen apa yang perlu saya siapkan untuk membuat KTP?",
+   "baru 17 thn mau bikin ktp, bawa apa",
+   "Anak saya baru ulang tahun ke-17, syarat bikin KTP-nya apa saja?",
+   "syrat bkin ktp bru apaan",
+   "Apa saja persyaratan penerbitan KTP-el baru bagi WNI?"
+  ]
+ },
+ {
+  "intent": "ktp_chip_tulisan_pudar",
+  "kategori": "layanan",
+  "topik": "KTP rusak",
+  "label_saran": "Apakah KTP yang tulisannya pudar bisa diganti?",
+  "jawaban": "KTP-el (KTP elektronik) yang rusak bisa diganti di Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) dengan membawa KTP yang rusak itu.\nApakah KTP yang tulisannya pudar atau chip-nya (bagian elektronik di dalam kartu) tidak terbaca dianggap rusak, keputusannya ada di petugas. Jadi tanyakan dulu ke Dukcapil setempat.",
+  "jawaban_latih": "KTP-el yang rusak fisik dapat diajukan penggantian ke Disdukcapil dengan membawa KTP-el rusak tersebut. Apakah KTP yang hanya pudar atau chip-nya tidak terbaca dianggap rusak, keputusannya ada di petugas, jadi tanyakan ke Disdukcapil setempat.",
+  "fakta_kunci": [
+   "rusak",
+   "dukcapil"
+  ],
+  "review_status": "needs_review",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/page/read/penerbitan-ktp-el-baru-karena-pindah-perubahan-data-rusak-dan-hilang-untuk-wni",
+   "https://dukcapil.kemendagri.go.id/blog/read/bolehkah-mengganti-pas-foto-di-ktp-el-begini-aturannya-sesuai-permendagri"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah KTP elektronik dengan tulisan pudar dapat diganti?",
+   "ktp burem/pudar bs diganti ga",
+   "chip ktp ga kebaca, ganti bisa?",
+   "Kak, KTP-ku tulisannya udah samar banget, ditolak pas di bank. Bisa diganti?",
+   "Chip KTP-el saya tidak terbaca saat verifikasi di kantor, apakah bisa diganti?"
+  ]
+ },
+ {
+  "intent": "ktp_hilang_surat_polisi",
+  "kategori": "layanan",
+  "topik": "KTP hilang",
+  "label_saran": "Apakah wajib pakai surat kehilangan dari polisi untuk mengganti KTP yang hilang?",
+  "jawaban": "Ya, surat kehilangan dari kepolisian memang diperlukan.\nDi Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) DKI Jakarta, surat kehilangan itu bahkan hanya berlaku paling lama 14 hari, jadi sebaiknya segera mengurus KTP setelah surat terbit. Aturan masa berlaku di daerah lain bisa berbeda.",
+  "jawaban_latih": "Surat kehilangan dari kepolisian memang diperlukan. Disdukcapil DKI Jakarta bahkan mensyaratkan surat kehilangan tersebut berlaku maksimal 14 hari, jadi sebaiknya segera diurus setelah surat terbit. Ketentuan masa berlaku di daerah lain bisa berbeda.",
+  "fakta_kunci": [
+   "kepolisian",
+   "14 hari"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://kependudukancapil.jakarta.go.id/pelayanan-suku-dinas-dukcapil-kota-kabupaten/"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah surat kehilangan dari kepolisian wajib untuk mengganti KTP yang hilang?",
+   "ktp ilang wajib surat polisi ga",
+   "surat ilang dr polsek berlaku brp lama",
+   "Kak, surat kehilangan dari polisi udah sebulan lalu, masih bisa dipakai buat ganti KTP?",
+   "Saya tinggal di Jakarta dan KTP saya hilang dua minggu lalu, apakah surat kehilangan saya masih berlaku?",
+   "mau nanya dong, surat ilang dr polsek berlaku brp lama ya kak"
+  ]
+ },
+ {
+  "intent": "ktp_hilang_syarat",
+  "kategori": "layanan",
+  "topik": "KTP hilang",
+  "label_saran": "KTP saya hilang, apa saja syarat mengurusnya?",
+  "jawaban": "Untuk mengurus KTP-el (KTP elektronik) yang hilang:\n1. Isi formulir F-1.02 (formulir pendaftaran data kependudukan, tersedia di Disdukcapil).\n2. Lampirkan surat keterangan kehilangan dari kepolisian.\n3. Bawa juga KK (Kartu Keluarga).\nLalu ajukan ke Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil). Tidak perlu surat pengantar dari RT/RW.\nDasar aturan: Perpres 96/2018 (Peraturan Presiden tentang syarat pendaftaran penduduk).",
+  "jawaban_latih": "Untuk KTP-el hilang, isi formulir F-1.02 dan lampirkan surat keterangan kehilangan dari kepolisian, lalu ajukan ke Disdukcapil. Siapkan juga KK karena Perpres 96/2018 mencantumkannya sebagai syarat. Tidak perlu pengantar RT/RW.",
+  "fakta_kunci": [
+   "kepolisian",
+   "f-1.02",
+   "kk"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/page/read/penerbitan-ktp-el-baru-karena-pindah-perubahan-data-rusak-dan-hilang-untuk-wni",
+   "https://setkab.go.id/perpres-no-962018-inilah-tata-cara-dan-persyaratan-penerbitan-ktp-el/",
+   "https://kependudukancapil.jakarta.go.id/pelayanan-suku-dinas-dukcapil-kota-kabupaten/"
+  ],
+  "contoh_pertanyaan": [
+   "Apa persyaratan penerbitan KTP elektronik karena hilang?",
+   "KTP saya hilang, harus gimana ya?",
+   "ktp ilang gmn ngurusnya",
+   "ktp gw ilang bkin lg hrs ngapain",
+   "Kak tolong, dompetku kecopetan dan KTP ikut hilang. Ngurusnya gimana?",
+   "KTP saya hilang saat mudik, dokumen apa yang harus saya bawa ke Dukcapil?",
+   "Bagaimana prosedur penggantian KTP elektronik yang hilang?",
+   "e-ktp ilang di jalan, bikin lagi syaratnya apa",
+   "ktpku ilang bang, harus ke mana dulu?",
+   "Kak, KTP aku hilang pas naik KRL, mesti bawa apa ke Dukcapil?",
+   "ktp gue ilaang, gmn cara bikin yg baru gantinya",
+   "ktp raib entah dmn, mau ganti hrs ngapain aja"
+  ]
+ },
+ {
+  "intent": "ktp_luar_domisili",
+  "kategori": "layanan",
+  "topik": "KTP baru",
+  "label_saran": "Apakah KTP bisa dibuat di luar daerah tempat tinggal?",
+  "jawaban": "Bisa. Kamu boleh merekam dan membuat KTP-el (KTP elektronik) baru di Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) di luar daerah tempat tinggalmu (luar domisili), dengan syarat:\n1. Tidak sekaligus melakukan perubahan data penduduk.\n2. Membawa KK (Kartu Keluarga).\nDasar aturan: Perpres 96/2018 (Peraturan Presiden tentang syarat pendaftaran penduduk).",
+  "jawaban_latih": "Bisa. Perekaman dan penerbitan KTP-el baru di Disdukcapil luar domisili diperbolehkan dengan syarat tidak melakukan perubahan data penduduk dan membawa KK, sesuai Perpres 96/2018.",
+  "fakta_kunci": [
+   "luar domisili",
+   "kk",
+   "perubahan data"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://setkab.go.id/perpres-no-962018-inilah-tata-cara-dan-persyaratan-penerbitan-ktp-el/",
+   "https://dukcapil.kemendagri.go.id/files/PERPRES/2018/PERPRES_NO_96_TAHUN_2018.pdf"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah KTP elektronik dapat dibuat di luar domisili?",
+   "bkin ktp di luar kota bisa ga",
+   "ngerantau nih, rekam ktp di kota sini bisa?",
+   "Aku kuliah di Bogor tapi KK-ku di Medan, bisa bikin KTP di sini nggak ya?",
+   "Saya kerja di Jakarta sementara KK saya di Jawa Tengah. Bisakah saya rekam KTP-el di Jakarta tanpa pindah alamat?"
+  ]
+ },
+ {
+  "intent": "ktp_rusak_syarat",
+  "kategori": "layanan",
+  "topik": "KTP rusak",
+  "label_saran": "KTP saya rusak atau patah, bagaimana cara menggantinya?",
+  "jawaban": "Untuk mengganti KTP-el (KTP elektronik) yang rusak:\n1. Isi formulir F-1.02 (formulir pendaftaran data kependudukan, tersedia di Disdukcapil).\n2. Bawa KTP-el yang rusak.\n3. Bawa juga KK (Kartu Keluarga).\nSerahkan ke Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil), lalu Dinas mencetak KTP-el baru. Tidak perlu surat pengantar dari RT/RW. Dasar aturan: Perpres 96/2018.",
+  "jawaban_latih": "Isi formulir F-1.02 dan bawa KTP-el yang rusak ke Disdukcapil, lalu Dinas menerbitkan KTP-el baru. Bawa juga KK sesuai Perpres 96/2018. Tidak perlu pengantar RT/RW.",
+  "fakta_kunci": [
+   "ktp-el yang rusak",
+   "f-1.02",
+   "kk"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/page/read/penerbitan-ktp-el-baru-karena-pindah-perubahan-data-rusak-dan-hilang-untuk-wni",
+   "https://setkab.go.id/perpres-no-962018-inilah-tata-cara-dan-persyaratan-penerbitan-ktp-el/"
+  ],
+  "contoh_pertanyaan": [
+   "KTP saya patah, bisa diganti nggak?",
+   "ktp patah gmn gantinya",
+   "ktp gw kebelah 2 bs ganti ga",
+   "Kak, KTP-ku ketekuk sampai retak, bisa diganti? Bawa apa aja?",
+   "KTP saya rusak karena terendam banjir, bagaimana cara menggantinya?",
+   "ktp aku patah, bs diganti ga",
+   "Dokumen apa yang diperlukan untuk mengganti KTP-el yang rusak?",
+   "ktp sobek dikit, bs dituker baru ga",
+   "ktp kena air jd melengkung, ngurus ganti gmn",
+   "KTP saya rusak tapi fisiknya masih ada, bukan hilang. Apa yang harus dibawa?",
+   "ktp rsak bkn ilang, gnti nya gmn",
+   "KTP saya terbelah dua, ngurus penggantiannya gimana?"
+  ]
+ },
+ {
+  "intent": "ktp_wna_perpanjang",
+  "kategori": "layanan",
+  "topik": "KTP WNA",
+  "label_saran": "Apakah KTP untuk warga negara asing perlu diperpanjang?",
+  "jawaban": "Ya, KTP-el (KTP elektronik) warga negara asing bisa diperpanjang, karena masa berlakunya mengikuti izin tinggal tetap (izin resmi untuk menetap di Indonesia).\nUntuk perpanjangan, Disdukcapil DKI Jakarta meminta KTP-el lama beserta dokumen izin tinggal yang masih berlaku.",
+  "jawaban_latih": "Ya, KTP-el orang asing dapat diperpanjang karena masa berlakunya mengikuti izin tinggal tetap. Untuk perpanjangan, Disdukcapil DKI Jakarta mensyaratkan KTP-el lama pemohon beserta dokumen izin tinggal yang berlaku.",
+  "fakta_kunci": [
+   "perpanjangan",
+   "izin tinggal tetap",
+   "ktp-el lama"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://setkab.go.id/perpres-no-962018-inilah-tata-cara-dan-persyaratan-penerbitan-ktp-el/",
+   "https://kependudukancapil.jakarta.go.id/pelayanan-suku-dinas-dukcapil-kota-kabupaten/"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah KTP elektronik WNA perlu diperpanjang?",
+   "KTP WNA ada masa berlakunya?",
+   "ktp wna hrs diperpanjang ga",
+   "perpanjang ktp wna bawa apa",
+   "Izin tinggal tetap saya sudah diperpanjang, bagaimana dengan KTP-el saya?",
+   "ktp buat warga asing itu ada tgl kedaluwarsanya ga min?"
+  ]
+ },
+ {
+  "intent": "ktp_wna_syarat",
+  "kategori": "layanan",
+  "topik": "KTP WNA",
+  "label_saran": "Apa syarat KTP untuk warga negara asing?",
+  "jawaban": "KTP-el (KTP elektronik) untuk warga negara asing hanya untuk pemegang izin tinggal tetap (ITAP, izin resmi untuk menetap di Indonesia). Syaratnya:\n1. Berusia 17 tahun, atau sudah/pernah menikah.\n2. Fotokopi KK (Kartu Keluarga).\n3. Fotokopi paspor.\n4. Fotokopi kartu izin tinggal tetap.",
+  "jawaban_latih": "KTP-el untuk orang asing hanya bagi pemegang izin tinggal tetap (ITAP). Syaratnya: berusia 17 tahun atau sudah/pernah kawin, fotokopi KK, fotokopi paspor, dan fotokopi kartu izin tinggal tetap.",
+  "fakta_kunci": [
+   "izin tinggal tetap",
+   "paspor",
+   "kk"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://setkab.go.id/perpres-no-962018-inilah-tata-cara-dan-persyaratan-penerbitan-ktp-el/",
+   "https://kependudukancapil.jakarta.go.id/pelayanan-suku-dinas-dukcapil-kota-kabupaten/"
+  ],
+  "contoh_pertanyaan": [
+   "Apa persyaratan KTP elektronik bagi warga negara asing?",
+   "wna bs punya ktp ga",
+   "bule bkin ktp syaratnya apa",
+   "Suamiku WNA dan sudah punya ITAP, bisa bikin KTP Indonesia nggak?",
+   "Teman saya warga negara Jepang dengan izin tinggal terbatas, apakah bisa membuat KTP-el?",
+   "mau nanya dong, bule bkin ktp syaratnya apa pls"
+  ]
+ },
+ {
+  "intent": "lama_proses",
+  "kategori": "layanan",
+  "topik": "Lama proses KTP",
+  "label_saran": "Berapa lama proses pembuatan KTP?",
+  "jawaban": "Lama prosesnya tidak sama di setiap daerah. Contohnya, Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) Ngawi menargetkan 1 hari kerja untuk KTP-el (KTP elektronik) baru. Di daerah lain bisa lebih lama, tergantung antrean dan ketersediaan blangko (kartu kosong untuk dicetak).\nTanyakan perkiraan waktunya ke Dukcapil setempat.",
+  "jawaban_latih": "Waktu penyelesaian tidak seragam. Sebagai contoh, standar pelayanan Disdukcapil Ngawi mencantumkan 1 hari kerja untuk KTP-el baru, tapi di daerah lain bisa lebih lama tergantung antrean dan ketersediaan blangko. Tanyakan estimasinya ke Disdukcapil setempat.",
+  "fakta_kunci": [
+   "hari kerja",
+   "dukcapil",
+   "ketersediaan"
+  ],
+  "review_status": "needs_review",
+  "sumber": [
+   "https://dukcapil.ngawikab.go.id/wp-content/uploads/2025/01/SP-KTP-Baru-WNI-a01.pdf",
+   "https://disdukcapil.bandarlampungkota.go.id/pages/4AxQ28wE3uDc-penerbitan-kutipan-akta-kelahiran"
+  ],
+  "contoh_pertanyaan": [
+   "Berapa lama waktu penyelesaian KTP elektronik?",
+   "ktp jd brp lama",
+   "rekam ktp kpn jadinya",
+   "Kak, aku udah rekam KTP minggu lalu, biasanya jadi berapa lama sih?",
+   "Saya butuh KTP untuk daftar kerja minggu depan, kira-kira sempat jadi tidak?"
+  ]
+ },
+ {
+  "intent": "nik_baru",
+  "kategori": "layanan",
+  "topik": "NIK pertama kali",
+  "label_saran": "Bagaimana cara mendapat NIK bagi warga yang belum terdata?",
+  "jawaban": "Warga yang datanya belum tercatat dan baru akan didaftarkan ke database (data) kependudukan, supaya mendapat NIK (Nomor Induk Kependudukan, nomor 16 digit di KTP/KK) dan masuk KK (Kartu Keluarga), masih perlu surat pengantar dari RT/RW. Ini menurut keterangan Dirjen Dukcapil yang dikutip media.\nUntuk bayi, NIK biasanya langsung terbit saat kelahirannya dicatat dan bayi ditambahkan ke KK.",
+  "jawaban_latih": "Penduduk yang belum terdata dan baru akan dimasukkan ke database kependudukan agar mendapat NIK dan masuk KK masih memerlukan surat pengantar RT/RW, menurut keterangan Dirjen Dukcapil yang dikutip media. Untuk bayi, NIK biasanya terbit saat pencatatan kelahiran dan penambahan ke KK.",
+  "fakta_kunci": [
+   "nik",
+   "database",
+   "pengantar"
+  ],
+  "review_status": "needs_review",
+  "sumber": [
+   "https://www.kompas.com/tren/read/2026/07/20/070000865/daftar-dokumen-kependudukan-yang-masih-perlu-surat-pengantar-rt-rw-apa-saja",
+   "https://www.antaranews.com/berita/5661824/6-dokumen-kependudukan-yang-bisa-diurus-tanpa-surat-pengantar-rt-rw"
+  ],
+  "contoh_pertanyaan": [
+   "Bagaimana prosedur memperoleh NIK bagi penduduk yang belum terdata?",
+   "blm pny nik gmn",
+   "gw ga ke data di dukcapil, bkin nik gmn",
+   "Kak, aku dari kecil nggak pernah masuk KK, gimana caranya dapet NIK?",
+   "Ada tetangga saya yang belum punya NIK sama sekali, apa yang harus dia urus pertama kali?",
+   "gan gw ga ke data di dukcapil, bkin nik gmn hehe"
+  ]
+ },
+ {
+  "intent": "oos_di_luar_cakupan",
+  "kategori": "di_luar_cakupan",
+  "topik": "Di luar cakupan",
+  "jawaban": "Maaf, pertanyaan itu di luar cakupan saya. Saya asisten khusus urusan dokumen kependudukan, jadi hanya bisa membantu soal KTP, KK (Kartu Keluarga), KIA (Kartu Identitas Anak), akta kelahiran, akta kematian, IKD (KTP digital), dan pindah domisili (pindah alamat). Untuk urusan lain, silakan hubungi instansi yang berwenang.",
+  "jawaban_latih": "Maaf, pertanyaan itu di luar cakupan saya. Saya asisten khusus layanan administrasi kependudukan (Dukcapil), jadi hanya bisa membantu soal KTP-el, KK, KIA, akta kelahiran, akta kematian, IKD, dan pindah domisili. Untuk urusan lain, silakan hubungi instansi atau sumber resmi yang berwenang.",
+  "fakta_kunci": [
+   "maaf",
+   "di luar cakupan"
+  ],
+  "review_status": "unverified",
+  "sumber": [],
+  "contoh_pertanyaan": [
+   "bkin sim c gmn min",
+   "bikin paspor syaratnya apa",
+   "Cara mendaftar BPJS Kesehatan?",
+   "daftar bpjs gmn kak",
+   "Cara bikin NPWP online?",
+   "Cara membuat STNK baru?",
+   "balik nama stnk gmn",
+   "Cara daftar CPNS tahun ini?",
+   "Syarat daftar sekolah negeri?",
+   "Kapan jadwal pencairan bansos?",
+   "Cara daftar nikah di KUA?",
+   "Syarat bikin SKCK apa aja?",
+   "Cara mengurus sertifikat tanah?",
+   "Resep nasi goreng enak apa?",
+   "rekomendasi hp 2 jutaan dong",
+   "Siapa presiden Indonesia saat ini?",
+   "Bagaimana prediksi harga bitcoin minggu depan?",
+   "crypto apa yg lg bagus buat dibeli",
+   "saham bbca layak dibeli ga skrg",
+   "kurs dollar ke rupiah hari ini",
+   "rekomendasi pinjol yg cepet cair dong",
+   "situs slot gacor apa min",
+   "eth bakal to the moon ga bro",
+   "Cuaca Bogor besok hujan tidak?",
+   "skor bola semalem brp",
+   "Cara daftar kartu prakerja?",
+   "tarif listrik token bulan ini brp",
+   "Bagaimana cara mengajukan KPR rumah subsidi?",
+   "doge coin worth it ga buat invest",
+   "Tolong terjemahkan kalimat ini ke bahasa Inggris.",
+   "nonton film gratis di mana min"
+  ]
+ },
+ {
+  "intent": "oos_info_lokal",
+  "kategori": "info_lokal",
+  "topik": "Di luar cakupan",
+  "jawaban": "Maaf, saya tidak punya informasi terkini atau kontak setiap kantor, seperti jam buka, antrean, alamat, atau stok blangko (kartu kosong untuk dicetak). Silakan cek situs atau media sosial resmi Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) di daerahmu.",
+  "jawaban_latih": "Maaf, saya tidak punya informasi real-time atau data kontak tiap kantor, seperti jam buka, antrean, alamat, atau stok blangko. Silakan cek situs atau media sosial resmi Disdukcapil daerahmu.",
+  "fakta_kunci": [
+   "maaf"
+  ],
+  "review_status": "unverified",
+  "sumber": [
+   "kebijakan chatbot (penolakan/di luar cakupan, tanpa klaim faktual)"
+  ],
+  "contoh_pertanyaan": [
+   "dukcapil buka sabtu ga",
+   "Berapa antrean di Dukcapil sekarang?",
+   "Nomor telepon Dukcapil Kota Malang berapa?",
+   "alamat dukcapil bogor dmn",
+   "blangko ktp di daerahku ada ga",
+   "dukcapil kota bogor tutup jam brp",
+   "Apakah hari Minggu Disdukcapil buka?"
+  ]
+ },
+ {
+  "intent": "pengantar_conflict_rumah",
+  "kategori": "layanan",
+  "topik": "Dokumen tanpa pengantar",
+  "label_saran": "Apakah akta untuk yang lahir atau meninggal di rumah perlu surat pengantar?",
+  "jawaban": "Informasinya masih berbeda-beda:\n1. Media Detik menyebut akta kelahiran bayi yang lahir di rumah dan akta kematian orang yang meninggal di rumah masih perlu surat pengantar.\n2. Ditjen Dukcapil (pusat Dukcapil di Kementerian Dalam Negeri) menyebut akta tidak perlu surat pengantar dari RT/RW.\nYang pasti, surat keterangan lahir/kematian bisa dibuat oleh kepala desa/lurah. Pastikan ke Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) setempat.",
+  "jawaban_latih": "Ada perbedaan informasi di sini. Detik menyebut akta kelahiran untuk bayi yang lahir di rumah dan akta kematian untuk yang meninggal di rumah masih perlu pengantar, sedangkan Ditjen Dukcapil menyebut akta tidak perlu pengantar RT/RW. Yang jelas, surat keterangan lahir/kematian bisa diterbitkan oleh kepala desa/lurah, jadi pastikan ke Disdukcapil setempat.",
+  "fakta_kunci": [
+   "pengantar",
+   "lahir di rumah",
+   "meninggal di rumah"
+  ],
+  "review_status": "needs_review",
+  "sumber": [
+   "https://news.detik.com/berita/d-7444560/apa-saja-dokumen-kependudukan-yang-perlu-dan-tak-perlu-surat-pengantar",
+   "https://www.antaranews.com/berita/5661824/6-dokumen-kependudukan-yang-bisa-diurus-tanpa-surat-pengantar-rt-rw"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah akta untuk kelahiran atau kematian di rumah memerlukan surat pengantar?",
+   "lahiran di rmh prlu pengantar rt ga buat akta",
+   "meninggal di rumah akte nya prlu surat rt?",
+   "Kak, nenekku meninggal di rumah, bukan di RS. Perlu surat dari RT atau desa?",
+   "Anak saya lahir di rumah tanpa bidan, apakah perlu pengantar RT untuk akta kelahirannya?"
+  ]
+ },
+ {
+  "intent": "pengantar_ktp",
+  "kategori": "layanan",
+  "topik": "Surat pengantar KTP",
+  "label_saran": "Apakah membuat KTP masih perlu surat pengantar RT/RW?",
+  "jawaban": "Tidak perlu. Menurut Ditjen Dukcapil (pusat Dukcapil di Kementerian Dalam Negeri), merekam, membuat, dan mengganti KTP-el (KTP elektronik) yang hilang/rusak sudah tidak perlu surat pengantar dari RT/RW maupun kelurahan.\nDasar aturan: Perpres 96/2018 (Peraturan Presiden tentang syarat pendaftaran penduduk).",
+  "jawaban_latih": "Tidak perlu. Menurut Ditjen Dukcapil Kemendagri, perekaman, penerbitan, dan penggantian KTP-el (hilang/rusak) tidak lagi mensyaratkan surat pengantar RT/RW maupun kelurahan, mengacu pada Perpres 96/2018.",
+  "fakta_kunci": [
+   "pengantar",
+   "rt",
+   "kelurahan"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://www.antaranews.com/berita/5661824/6-dokumen-kependudukan-yang-bisa-diurus-tanpa-surat-pengantar-rt-rw",
+   "https://www.kompas.com/tren/read/2026/07/20/070000865/daftar-dokumen-kependudukan-yang-masih-perlu-surat-pengantar-rt-rw-apa-saja",
+   "https://news.detik.com/berita/d-7444560/apa-saja-dokumen-kependudukan-yang-perlu-dan-tak-perlu-surat-pengantar"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah pembuatan KTP elektronik masih memerlukan surat pengantar RT/RW?",
+   "bkin ktp hrs minta pengantar rt dlu ga",
+   "rekam ktp prlu surat dr rw gak",
+   "Pak RT-ku lagi nggak ada, bisa nggak tetep ngurus KTP tanpa pengantar?",
+   "Saya mau ganti KTP yang rusak, apakah harus ke kelurahan dulu minta pengantar?"
+  ]
+ },
+ {
+  "intent": "pengantar_ktp_ditolak",
+  "kategori": "layanan",
+  "topik": "Surat pengantar KTP",
+  "label_saran": "Bagaimana jika petugas tetap meminta surat pengantar RT untuk KTP?",
+  "jawaban": "Menurut aturan pusat, membuat KTP-el (KTP elektronik) tidak perlu surat pengantar dari RT/RW. Kalau petugas masih memintanya, tanyakan dengan sopan aturan yang menjadi dasarnya, lalu pastikan langsung ke Dukcapil/Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) kabupaten/kota setempat.",
+  "jawaban_latih": "Secara aturan pusat, KTP-el tidak memerlukan surat pengantar RT/RW. Kalau petugas di lapangan masih memintanya, tanyakan dasar aturannya dengan sopan dan konfirmasi langsung ke Disdukcapil kabupaten/kota setempat.",
+  "fakta_kunci": [
+   "pengantar",
+   "dukcapil"
+  ],
+  "review_status": "needs_review",
+  "sumber": [
+   "https://www.antaranews.com/berita/5661824/6-dokumen-kependudukan-yang-bisa-diurus-tanpa-surat-pengantar-rt-rw"
+  ],
+  "contoh_pertanyaan": [
+   "Bagaimana jika petugas tetap meminta surat pengantar RT untuk KTP?",
+   "kok di kelurahan msh dimintain pengantar rt sih buat ktp",
+   "disuruh minta pengantar rw pdhl katanya ga perlu",
+   "Kak, aku udah ke kantor tapi disuruh bawa pengantar RT, padahal katanya udah nggak perlu. Gimana nih?",
+   "Petugas di kecamatan saya tetap meminta pengantar RT/RW saat mengurus KTP-el, apa yang sebaiknya saya lakukan?"
+  ]
+ },
+ {
+  "intent": "pengantar_masih_perlu",
+  "kategori": "layanan",
+  "topik": "Surat pengantar masih diperlukan",
+  "label_saran": "Kapan surat pengantar RT/RW masih dibutuhkan?",
+  "jawaban": "Menurut keterangan Dirjen Dukcapil yang dikutip media, surat pengantar dari RT/RW masih diperlukan terutama untuk warga yang baru pertama kali didaftarkan ke database (data) kependudukan, supaya mendapat NIK (Nomor Induk Kependudukan) dan masuk KK (Kartu Keluarga).\nBeberapa media juga menyebut surat keterangan domisili (surat keterangan tempat tinggal) masih memakai pengantar RT.",
+  "jawaban_latih": "Menurut keterangan Dirjen Dukcapil yang dikutip media, surat pengantar RT/RW masih diperlukan terutama untuk penduduk yang baru pertama kali didaftarkan ke database kependudukan agar mendapat NIK dan masuk KK. Beberapa media juga menyebut surat keterangan domisili masih memakai pengantar RT.",
+  "fakta_kunci": [
+   "nik",
+   "database",
+   "domisili"
+  ],
+  "review_status": "needs_review",
+  "sumber": [
+   "https://www.kompas.com/tren/read/2026/07/20/070000865/daftar-dokumen-kependudukan-yang-masih-perlu-surat-pengantar-rt-rw-apa-saja",
+   "https://www.antaranews.com/berita/5661824/6-dokumen-kependudukan-yang-bisa-diurus-tanpa-surat-pengantar-rt-rw",
+   "https://nasional.kontan.co.id/news/ada-2-dokumen-yang-masih-perlu-surat-pengantar-rtrw-menurut-dukcapil-apa-saja"
+  ],
+  "contoh_pertanyaan": [
+   "Kapan surat pengantar RT masih dibutuhkan?",
+   "yg msh butuh pengantar rt apa aja",
+   "pengantar rt rw tuh skrg buat apa aja",
+   "Kak, jadi surat pengantar RT itu sekarang masih kepake buat ngurus apa aja?",
+   "Saya pengurus RT, warga mana saja yang masih perlu saya buatkan surat pengantar untuk Dukcapil?",
+   "penduduk yg blm punya nik itu urusnya tetep pake surat rt?"
+  ]
+ },
+ {
+  "intent": "penipuan_calo",
+  "kategori": "layanan",
+  "topik": "Waspada penipuan",
+  "label_saran": "Apakah aman memakai jasa calo untuk mengurus dokumen?",
+  "jawaban": "Sebaiknya jangan. Semua dokumen kependudukan gratis (Pasal 79A UU 24/2013), jadi tidak perlu membayar calo. Urus langsung di kantor atau lewat layanan resmi (kanal resmi) Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil), supaya data pribadimu tidak disalahgunakan.",
+  "jawaban_latih": "Sebaiknya tidak. Semua dokumen kependudukan gratis (Pasal 79A UU 24/2013), jadi tidak perlu membayar calo. Urus langsung lewat kantor atau kanal resmi Disdukcapil supaya data pribadimu tidak disalahgunakan.",
+  "fakta_kunci": [
+   "gratis",
+   "calo",
+   "kanal resmi"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://jdih.kemenkeu.go.id/api/download/fulltext/2013/24TAHUN2013UU.htm",
+   "https://disdukcapil.serangkota.go.id/detailpost/waspada-penipuan-aktivasi-ikd-kenali-modus-dan-cara-melindungi-data-pribadi"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah aman menggunakan jasa calo untuk mengurus dokumen kependudukan?",
+   "pake calo buat bkin kk aman ga",
+   "jasa urus akta online terpercaya ga",
+   "Kak, ada jasa di IG yang nawarin urus KK cepet bayar 200 ribu. Mending pakai itu?",
+   "Tetangga menawarkan bantu urus akta lewat kenalan di Dukcapil dengan imbalan, sebaiknya bagaimana?"
+  ]
+ },
+ {
+  "intent": "penipuan_ikd",
+  "kategori": "layanan",
+  "topik": "Waspada penipuan",
+  "label_saran": "Ada pesan WhatsApp mengaku dari Dukcapil untuk aktivasi IKD, harus bagaimana?",
+  "jawaban": "Hati-hati, itu modus penipuan.\n1. Jangan klik tautan atau mengunduh file APK (file aplikasi) yang dikirim lewat WhatsApp/SMS.\n2. Jangan berikan NIK, kode OTP (kode rahasia yang dikirim ke HP), PIN, atau data rekening bank.\nAktivasi IKD (KTP digital) gratis. Aplikasinya hanya diunduh dari toko aplikasi resmi, dan verifikasinya dilakukan di kantor Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil).",
+  "jawaban_latih": "Hati-hati, itu modus penipuan. Jangan klik tautan atau mengunduh file APK yang dikirim lewat WhatsApp/SMS, dan jangan berikan NIK, OTP, PIN, atau data perbankan. Aktivasi IKD gratis, aplikasinya hanya diunduh dari toko aplikasi resmi, dan verifikasinya dilakukan di kantor Disdukcapil.",
+  "fakta_kunci": [
+   "apk",
+   "otp",
+   "gratis",
+   "kantor disdukcapil"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/blog/read/ditjen-dukcapil-ingatkan-masyarakat-waspada-penipuan-berkedok-aktivasi-ikd",
+   "https://disdukcapil.serangkota.go.id/detailpost/waspada-penipuan-aktivasi-ikd-kenali-modus-dan-cara-melindungi-data-pribadi"
+  ],
+  "contoh_pertanyaan": [
+   "Bagaimana menyikapi pesan yang mengatasnamakan Dukcapil untuk aktivasi IKD?",
+   "ada yg chat ngaku dukcapil suruh download apk, aman ga",
+   "ditelpon dukcapil minta otp, beneran ga",
+   "Kak, ibuku dapet WA dari 'petugas Dukcapil' disuruh install aplikasi buat update KTP. Gimana?",
+   "Saya terlanjur mengklik tautan aktivasi IKD dari SMS, apa yang harus saya lakukan?"
+  ]
+ },
+ {
+  "intent": "pii_cek_status",
+  "kategori": "data_pribadi",
+  "topik": "Data pribadi",
+  "jawaban": "Maaf, saya tidak dapat melihat atau memeriksa data pribadi maupun status dokumenmu. Jangan bagikan NIK (nomor 16 digit di KTP) atau data pribadi di sini. Untuk cek status dokumen, hubungi Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) setempat atau gunakan layanan resmi mereka.",
+  "jawaban_latih": "Maaf, saya tidak dapat mengakses atau memeriksa data pribadi maupun status dokumen. Jangan bagikan NIK atau data pribadi di sini. Untuk cek status dokumenmu, hubungi Disdukcapil setempat atau gunakan layanan resmi mereka.",
+  "fakta_kunci": [
+   "maaf",
+   "data pribadi"
+  ],
+  "review_status": "unverified",
+  "sumber": [
+   "kebijakan chatbot (penolakan/di luar cakupan, tanpa klaim faktual)"
+  ],
+  "contoh_pertanyaan": [
+   "Cek status KTP saya dong, NIK 3573xxxxxxxxxxxx",
+   "ktp gw udh jadi blm? ini nik nya 3201xxxxxxxxxxxx",
+   "Tolong cek apakah KK saya sudah terbit, nomor KK 3271xxxxxxxxxxxx"
+  ]
+ },
+ {
+  "intent": "pii_orang_lain",
+  "kategori": "data_pribadi",
+  "topik": "Data pribadi",
+  "jawaban": "Maaf, saya tidak bisa mencari atau memberikan data pribadi orang lain. Data kependudukan dirahasiakan dan dilindungi negara, dan menyebarkannya tanpa hak bisa dipidana (dihukum) menurut UU 24/2013 (Undang-Undang Administrasi Kependudukan).",
+  "jawaban_latih": "Maaf, saya tidak bisa mencari atau memberikan data pribadi orang lain. Data kependudukan dilindungi kerahasiaannya oleh negara, dan menyebarluaskannya tanpa hak dapat dipidana menurut UU 24/2013.",
+  "fakta_kunci": [
+   "maaf",
+   "data pribadi"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://jdih.kemenkeu.go.id/api/download/fulltext/2013/24TAHUN2013UU.htm"
+  ],
+  "contoh_pertanyaan": [
+   "Bisa carikan alamat orang berdasarkan NIK-nya?",
+   "cek nik pacar gw dong udh nikah blm",
+   "minta data kk tetangga gw bisa?"
+  ]
+ },
+ {
+  "intent": "pii_ubah_data",
+  "kategori": "data_pribadi",
+  "topik": "Data pribadi",
+  "jawaban": "Maaf, saya tidak dapat mengubah data atau memproses dokumen apa pun, dan jangan kirim data pribadimu di sini. Perubahan data dan aktivasi IKD (KTP digital) harus diajukan langsung ke Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) setempat. Saya bisa jelaskan syaratnya kalau mau.",
+  "jawaban_latih": "Maaf, saya tidak dapat mengubah data atau memproses dokumen apa pun, dan jangan kirim data pribadimu di sini. Perubahan data dan aktivasi IKD harus diajukan langsung ke Disdukcapil setempat. Saya bisa jelaskan syaratnya kalau mau.",
+  "fakta_kunci": [
+   "maaf",
+   "disdukcapil"
+  ],
+  "review_status": "unverified",
+  "sumber": [
+   "kebijakan chatbot (penolakan/di luar cakupan, tanpa klaim faktual)"
+  ],
+  "contoh_pertanyaan": [
+   "Tolong ubah alamat di KTP saya jadi Jalan Merdeka 10",
+   "Aktifkan IKD saya sekarang, ini email dan nomor HP saya",
+   "tolong gantiin alamat di ktp gw dong, skrg di jl mawar 5",
+   "Bisakah Anda langsung memperbarui status perkawinan di KK saya?",
+   "update data kk sy skrg jg ya, ini no kk nya 3201xxxxxxxxxxxx"
+  ]
+ },
+ {
+  "intent": "pindah_anak",
+  "kategori": "layanan",
+  "topik": "Pindah anak di bawah 17",
+  "label_saran": "Apa syarat pindah untuk anak di bawah 17 tahun?",
+  "jawaban": "Jika yang pindah hanya anak di bawah 17 tahun:\n1. Di daerah asal: lampirkan surat pernyataan persetujuan dari orang tua/wali.\n2. Di daerah tujuan, jika anak menumpang di KK (Kartu Keluarga) orang lain: lampirkan surat kuasa pengasuhan (surat titip asuh) dari orang tua/wali, dan surat pernyataan bersedia menerima anak itu sebagai anggota keluarga dari kepala keluarga yang ditumpangi.",
+  "jawaban_latih": "Di daerah asal, jika yang pindah hanya anak di bawah 17 tahun, lampirkan surat pernyataan persetujuan dari orang tua/wali. Di daerah tujuan, jika anak menumpang KK orang lain, lampirkan surat kuasa pengasuhan dari orang tua/wali dan surat pernyataan bersedia menerima sebagai anggota keluarga dari kepala keluarga yang ditumpangi.",
+  "fakta_kunci": [
+   "persetujuan",
+   "kuasa pengasuhan",
+   "bersedia menerima"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.ngawikab.go.id/standar-pelayanan-pindahwni/"
+  ],
+  "contoh_pertanyaan": [
+   "Apa persyaratan pindah bagi penduduk di bawah 17 tahun?",
+   "anak 15 thn pndh ke kk om nya gmn",
+   "ponakan mau numpang kk gw, syaratnya",
+   "Kak, adikku umur 15 mau ikut KK tanteku di kota lain. Perlu surat apa aja?",
+   "Anak saya akan sekolah dan tinggal bersama neneknya di luar kota, bagaimana cara memindahkan datanya?",
+   "keponakan umur 12 mau pindah numpang kk tante, dokumen tambahannya apa?"
+  ]
+ },
+ {
+  "intent": "pindah_kedatangan",
+  "kategori": "layanan",
+  "topik": "Pindah domisili",
+  "label_saran": "Apa yang harus diurus setelah sampai di daerah tujuan pindah?",
+  "jawaban": "Di daerah tujuan:\n1. Serahkan SKPWNI (Surat Keterangan Pindah WNI dari daerah asal) ke Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil).\n2. Jika menumpang di KK (Kartu Keluarga) orang lain atau menyewa/kontrak rumah, lampirkan surat pernyataan tidak keberatan dari pemilik rumah.\n3. Serahkan juga KTP-el/KIA lama untuk dicetak ulang dengan alamat baru, bersama KK baru.",
+  "jawaban_latih": "Di daerah tujuan, serahkan SKPWNI ke Disdukcapil. Jika menumpang KK atau menyewa/kontrak rumah, lampirkan surat pernyataan tidak keberatan dari pemilik rumah. Serahkan juga KTP-el/KIA lama untuk diterbitkan ulang dengan alamat baru bersama KK baru.",
+  "fakta_kunci": [
+   "skpwni",
+   "daerah tujuan",
+   "menumpang"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.ngawikab.go.id/standar-pelayanan-pindahwni/"
+  ],
+  "contoh_pertanyaan": [
+   "Bagaimana prosedur pelaporan kedatangan di daerah tujuan?",
+   "Udah dapat SKPWNI, terus di kota tujuan ngapain?",
+   "udh dpt skpwni trus ngapain",
+   "lapor datang ke dukcapil baru bawa apa",
+   "Kak, aku ngontrak di kota baru, pas lapor datang perlu surat dari pemilik kontrakan?",
+   "Saya sudah memegang SKPWNI dari daerah asal, dokumen apa yang harus diserahkan di daerah tujuan?"
+  ]
+ },
+ {
+  "intent": "pindah_kk_ditinggal",
+  "kategori": "layanan",
+  "topik": "Dokumen pendukung pindah",
+  "label_saran": "Bagaimana Kartu Keluarga anggota keluarga yang tidak ikut pindah?",
+  "jawaban": "Jika hanya sebagian anggota keluarga yang pindah, Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) di daerah asal juga akan membuatkan KK baru (Kartu Keluarga baru) untuk anggota keluarga yang tidak pindah.",
+  "jawaban_latih": "Jika hanya sebagian anggota keluarga yang pindah, Disdukcapil daerah asal juga menerbitkan KK baru untuk anggota keluarga yang tidak pindah.",
+  "fakta_kunci": [
+   "kk baru",
+   "tidak pindah"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.ngawikab.go.id/standar-pelayanan-pindahwni/"
+  ],
+  "contoh_pertanyaan": [
+   "Bagaimana status KK anggota keluarga yang tidak ikut pindah?",
+   "Kalau cuma aku yang pindah, KK keluargaku gimana?",
+   "sebagian keluarga pindah kk nya jd gmn",
+   "Kak, aku pindah sendiri, nanti KK orang tuaku di rumah berubah nggak?",
+   "Hanya suami saya yang pindah domisili, apakah KK kami yang lama perlu diperbarui?",
+   "klo cuma aku yg pindah, kk keluargaku gmn"
+  ]
+ },
+ {
+  "intent": "pindah_ktp_lama",
+  "kategori": "layanan",
+  "topik": "Dokumen pendukung pindah",
+  "label_saran": "Saat mengurus pindah, apakah KTP lama diambil?",
+  "jawaban": "KTP-el (KTP elektronik) dan KIA (Kartu Identitas Anak) tidak diambil oleh Disdukcapil di daerah asal. Keduanya diserahkan nanti di Disdukcapil daerah tujuan, untuk dicetak ulang dengan alamat baru.\nDisdukcapil = Dinas Kependudukan dan Pencatatan Sipil.",
+  "jawaban_latih": "KTP-el dan KIA tidak ditarik oleh Disdukcapil daerah asal. Keduanya diserahkan di Disdukcapil daerah tujuan untuk diterbitkan ulang dengan alamat baru.",
+  "fakta_kunci": [
+   "ktp-el",
+   "kia",
+   "daerah tujuan"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.ngawikab.go.id/standar-pelayanan-pindahwni/"
+  ],
+  "contoh_pertanyaan": [
+   "Pas ngurus pindah, KTP lama diambil nggak?",
+   "ktp lama diambil ga pas pindah",
+   "pndh domisili ktp lama gmn",
+   "Kak, kalau aku urus SKPWNI, KTP-ku disita nggak? Aku masih butuh buat kerja.",
+   "Saat mengurus surat pindah di daerah asal, apakah KTP-el saya akan ditahan?",
+   "pas ngurus pindah, ktp lama diambil ga"
+  ]
+ },
+ {
+  "intent": "pindah_syarat",
+  "kategori": "layanan",
+  "topik": "Pindah domisili",
+  "label_saran": "Apa saja syarat mengurus pindah alamat ke daerah lain?",
+  "jawaban": "Cara mengurus pindah domisili (pindah alamat ke daerah lain):\n1. Di Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) daerah asal: isi formulir F-1.03 (formulir pendaftaran pindah penduduk) dan lampirkan fotokopi KK (Kartu Keluarga)/KTP.\n2. Disdukcapil lalu menerbitkan SKPWNI (Surat Keterangan Pindah WNI), tanpa perlu surat pengantar dari RT/RW.\n3. Setelah itu, laporkan kedatanganmu ke Disdukcapil daerah tujuan dengan membawa SKPWNI.",
+  "jawaban_latih": "Di Disdukcapil daerah asal: isi formulir F-1.03 dan lampirkan fotokopi KK/KTP. Disdukcapil lalu menerbitkan SKPWNI tanpa perlu pengantar RT/RW. Setelah itu laporkan kedatangan ke Disdukcapil daerah tujuan dengan membawa SKPWNI.",
+  "fakta_kunci": [
+   "f-1.03",
+   "kk",
+   "skpwni"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.ngawikab.go.id/standar-pelayanan-pindahwni/",
+   "https://www.antaranews.com/berita/5661824/6-dokumen-kependudukan-yang-bisa-diurus-tanpa-surat-pengantar-rt-rw"
+  ],
+  "contoh_pertanyaan": [
+   "Apa persyaratan pengurusan pindah domisili?",
+   "Syarat pindah domisili apa aja ya?",
+   "syarat pindah domisili apa aj",
+   "mau pndh alamat ngurusnya gmn",
+   "Saya pindah kerja ke kota lain dan ingin pindah KK, apa yang harus saya lakukan?"
+  ]
+ },
+ {
+  "intent": "pindah_via_tujuan_ikd",
+  "kategori": "layanan",
+  "topik": "Pindah domisili",
+  "label_saran": "Apakah urusan pindah bisa dilakukan tanpa pulang ke daerah asal?",
+  "jawaban": "Bisa. Menurut Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) Ngawi, SKPWNI (surat keterangan pindah) bisa diurus lewat Disdukcapil daerah tujuan, yang nanti mengajukannya ke daerah asal lewat aplikasi.\nPindah perorangan (satu orang saja) juga bisa diajukan lewat aplikasi IKD (KTP digital) tanpa dokumen tambahan, asal sudah punya IKD.",
+  "jawaban_latih": "Bisa. Menurut Disdukcapil Ngawi, SKPWNI dapat diurus melalui Disdukcapil daerah tujuan yang akan mengajukannya ke daerah asal lewat aplikasi. Pindah perorangan juga bisa diajukan lewat aplikasi IKD tanpa dokumen tambahan, asal sudah punya IKD.",
+  "fakta_kunci": [
+   "skpwni",
+   "ikd",
+   "daerah tujuan"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.ngawikab.go.id/standar-pelayanan-pindahwni/"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah pengurusan pindah dapat dilakukan tanpa kembali ke daerah asal?",
+   "urus pindah hrs balik ke daerah asal ga",
+   "pindah domisili lwt ikd bisa?",
+   "Kak, aku udah tinggal di Jakarta, males pulang ke Surabaya cuma buat ngurus surat pindah. Ada cara lain?",
+   "Saya tidak bisa pulang ke daerah asal, bisakah surat pindah diurus dari kota tempat saya tinggal sekarang?",
+   "mau nanya dong, pindah domisili lwt ikd bisa? dong"
+  ]
+ },
+ {
+  "intent": "rekam_diwakilkan",
+  "kategori": "layanan",
+  "topik": "Perekaman KTP",
+  "label_saran": "Apakah perekaman KTP bisa diwakilkan orang lain?",
+  "jawaban": "Tidak bisa diwakilkan. Membuat KTP-el (KTP elektronik) baru memerlukan perekaman biometrik oleh petugas Disdukcapil, yaitu foto wajah, sidik jari, dan pemindaian iris mata. Jadi pemohon harus datang sendiri.",
+  "jawaban_latih": "Tidak bisa diwakilkan. Penerbitan KTP-el baru membutuhkan perekaman biometrik (foto, sidik jari, iris mata) oleh petugas Disdukcapil, jadi pemohon harus datang sendiri.",
+  "fakta_kunci": [
+   "biometrik",
+   "datang sendiri",
+   "diwakilkan"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.ngawikab.go.id/wp-content/uploads/2025/01/SP-KTP-Baru-WNI-a01.pdf",
+   "https://dukcapil.kemendagri.go.id/blog/read/bolehkah-mengganti-pas-foto-di-ktp-el-begini-aturannya-sesuai-permendagri"
+  ],
+  "contoh_pertanyaan": [
+   "Apakah perekaman KTP elektronik dapat diwakilkan?",
+   "rekam ktp bs diwakilin ga",
+   "bkin ktp hrs dtg sndiri ya",
+   "Aku lagi sibuk banget, bisa nggak ibuku aja yang dateng buat rekam KTP-ku?",
+   "Anak saya sedang mondok di luar kota, bisakah saya yang datang untuk perekaman KTP-elnya?"
+  ]
+ },
+ {
+  "intent": "rekam_tempat",
+  "kategori": "layanan",
+  "topik": "Perekaman KTP",
+  "label_saran": "Di mana tempat perekaman KTP?",
+  "jawaban": "Perekaman KTP-el (pengambilan foto, sidik jari, dan iris mata untuk KTP elektronik) dilayani di Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) kabupaten/kota. Di banyak daerah juga bisa di kantor kecamatan atau lewat layanan jemput bola (petugas datang ke lokasi warga).\nLokasi pastinya berbeda tiap daerah, jadi cek pengumuman Disdukcapil setempat.",
+  "jawaban_latih": "Perekaman KTP-el dilayani di Disdukcapil kabupaten/kota, dan di banyak daerah juga di kecamatan atau layanan jemput bola. Lokasi pastinya berbeda tiap daerah, jadi cek pengumuman Disdukcapil setempat.",
+  "fakta_kunci": [
+   "disdukcapil",
+   "kecamatan",
+   "jemput bola"
+  ],
+  "review_status": "needs_review",
+  "sumber": [
+   "https://dukcapil.ngawikab.go.id/standar-pelayanan-pindahwni/",
+   "https://setkab.go.id/perpres-no-962018-inilah-tata-cara-dan-persyaratan-penerbitan-ktp-el/"
+  ],
+  "contoh_pertanyaan": [
+   "Di mana perekaman KTP elektronik dapat dilakukan?",
+   "rekam ktp dmn",
+   "rekam e ktp di kecamatan bisa ga",
+   "Kak, rekam KTP itu harus ke kantor Dukcapil kota atau bisa di kecamatan?",
+   "Kantor Dukcapil kabupaten saya jauh, apakah perekaman bisa dilakukan di kecamatan?"
+  ]
+ },
+ {
+  "intent": "usia_bawah17_kia",
+  "kategori": "layanan",
+  "topik": "Usia KTP",
+  "label_saran": "Anak di bawah 17 tahun pakai kartu identitas apa?",
+  "jawaban": "Anak di bawah 17 tahun yang belum menikah belum bisa punya KTP-el (KTP elektronik). Kartu identitas resminya adalah KIA (Kartu Identitas Anak), yang dibuat oleh Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) kabupaten/kota.",
+  "jawaban_latih": "Anak di bawah 17 tahun yang belum menikah belum bisa punya KTP-el. Identitas resminya adalah Kartu Identitas Anak (KIA), yang diterbitkan Disdukcapil kabupaten/kota.",
+  "fakta_kunci": [
+   "kia",
+   "17 tahun",
+   "belum menikah"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/files/PERPRES/2018/PERPRES_NO_96_TAHUN_2018.pdf",
+   "https://peraturan.bpk.go.id/Download/304718/Permendagri%20Nomor%202%20Tahun%202016.pdf"
+  ],
+  "contoh_pertanyaan": [
+   "Dokumen identitas apa yang dimiliki anak di bawah 17 tahun?",
+   "blm 17 tp butuh identitas pake apa",
+   "anak smp punya ktp ga sih",
+   "Adikku masih 14 tahun, kalau butuh kartu identitas pakai apa ya?",
+   "Sekolah meminta kartu identitas untuk anak saya yang berusia 12 tahun, dokumen apa yang dimaksud?",
+   "kak anak smp punya ktp ga sih hehe"
+  ]
+ },
+ {
+  "intent": "usia_wajib_ktp",
+  "kategori": "layanan",
+  "topik": "Usia KTP",
+  "label_saran": "Umur berapa seseorang boleh membuat KTP?",
+  "jawaban": "KTP-el (KTP elektronik) bisa dibuat jika sudah berusia 17 tahun, atau sudah menikah (kawin), atau pernah menikah. Jadi yang sudah menikah boleh punya KTP-el meskipun belum 17 tahun.\nDasar aturan: Pasal 15 Perpres 96/2018 (Peraturan Presiden tentang syarat pendaftaran penduduk).",
+  "jawaban_latih": "KTP-el bisa dibuat kalau sudah berusia 17 tahun, atau sudah kawin, atau pernah kawin (Pasal 15 Perpres 96/2018). Jadi yang sudah menikah boleh punya KTP-el meskipun belum 17 tahun.",
+  "fakta_kunci": [
+   "17 tahun",
+   "kawin"
+  ],
+  "review_status": "verified",
+  "sumber": [
+   "https://dukcapil.kemendagri.go.id/files/PERPRES/2018/PERPRES_NO_96_TAHUN_2018.pdf",
+   "https://setkab.go.id/perpres-no-962018-inilah-tata-cara-dan-persyaratan-penerbitan-ktp-el/"
+  ],
+  "contoh_pertanyaan": [
+   "Pada usia berapa seseorang wajib memiliki KTP elektronik?",
+   "Umur berapa sih boleh punya KTP?",
+   "umur brp bisa bikin ktp",
+   "16 thn udh bisa bikin ktp blm",
+   "Kak, aku umur 16, udah boleh bikin KTP belum ya?",
+   "Keponakan saya umur 16 tahun tapi sudah menikah, boleh dibuatkan KTP-el?"
+  ]
+ }
+]

@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Mulai percakapan | Ruang Warga</title>
+    <meta
+      name="description"
+      content="Tanya soal KTP, KK, dan dokumen kependudukan dengan bahasa sehari-hari. Asisten AI informasi dokumen kependudukan, bukan layanan resmi Dukcapil."
+    />
+    <meta
+      property="og:title"
+          content="Ruang Warga: Urusan dokumen, jadi lebih jelas."
+    />
+    <meta
+      property="og:description"
+      content="Asisten AI informasi administrasi kependudukan."
+    />
+    <meta property="og:image" content="/static/og.svg" />
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg" />
+    <link
+      rel="preload"
+      href="/static/fonts/plus-jakarta-sans-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/static/fonts/manrope-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/static/css/fonts.css" />
+    <link rel="stylesheet" href="/static/css/tailwind.css" />
+    <link rel="stylesheet" href="/static/css/base.css" />
+    <script>
+      (function () {
+        let theme = null;
+        try {
+          theme = localStorage.getItem("ruang-warga-theme");
+        } catch (e) {}
+        const dark =
+          theme === "dark" ||
+          (!theme &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches);
+        if (dark) document.documentElement.classList.add("dark");
+      })();
+    </script>
+  </head>
+  <body class="bg-background font-sans text-foreground antialiased">
+    <a
+      href="#utama"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-lg focus:bg-background focus:p-4 focus:shadow-lg"
+      >Lewati ke isi utama</a
+    >
+    <div class="flex h-dvh min-h-0">
+      <div
+        id="sidebar-scrim"
+        class="fixed inset-0 z-30 hidden bg-primary/30 md:hidden"
+      ></div>
+      <aside
+        id="sidebar"
+        class="fixed inset-y-0 left-0 z-40 hidden w-72 shrink-0 flex-col border-r bg-muted/40 p-4 backdrop-blur-xl md:static md:flex md:w-64"
+      >
+        <div class="flex h-12 items-center justify-between px-2">
+          <a
+            href="/"
+            class="inline-flex items-center gap-2 font-semibold tracking-tight"
+            aria-label="Ruang Warga, beranda"
+            ><span
+              class="size-8 inline-flex shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm"
+              ><svg
+                class="size-4 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"
+                /></svg></span
+            ><span
+              >Ruang Warga</span
+            ></a
+          ><button
+            id="close-sidebar"
+            class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none text-muted-foreground hover:text-foreground hover:bg-muted p-2 md:hidden"
+            aria-label="Tutup menu"
+          >
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m6 6 12 12M6 18 18 6" />
+            </svg>
+          </button>
+        </div>
+        <button
+          id="new-chat"
+          class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none border bg-background shadow-sm hover:bg-muted px-4 py-2.5 mt-6 w-full justify-start"
+        >
+          <svg
+            class="size-4 shrink-0"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M12 5v14M5 12h14" /></svg
+          >Percakapan baru
+        </button>
+        <p class="mb-3 mt-8 px-2 text-xs font-medium text-muted-foreground">
+          Topik yang bisa ditanyakan
+        </p>
+        <nav aria-label="Pilihan topik" class="space-y-1">
+          <button
+            data-question="ktp gw ilang gmn ya"
+            class="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm text-muted-foreground transition-colors duration-300 hover:bg-muted hover:text-foreground"
+          >
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M3 5h18v14H3ZM3 9h18M7 13h3M7 16h6M16 13h2" /></svg
+            >KTP elektronik</button
+          ><button
+            data-question="kk rusak bisa diganti ga"
+            class="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm text-muted-foreground transition-colors duration-300 hover:bg-muted hover:text-foreground"
+          >
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+              /></svg
+            >Kartu keluarga</button
+          ><button
+            data-question="Apa itu KIA?"
+            class="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm text-muted-foreground transition-colors duration-300 hover:bg-muted hover:text-foreground"
+          >
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM8 14s1.5 2 4 2 4-2 4-2M8 8h.01M16 8h.01"
+              /></svg
+            >Kartu identitas anak</button
+          ><button
+            data-question="Cara mengurus akta kelahiran?"
+            class="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm text-muted-foreground transition-colors duration-300 hover:bg-muted hover:text-foreground"
+          >
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8ZM14 2v6h6M8 13h8M8 17h5"
+              /></svg
+            >Akta kelahiran</button
+          ><button
+            data-question="Cara mengurus akta kematian?"
+            class="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm text-muted-foreground transition-colors duration-300 hover:bg-muted hover:text-foreground"
+          >
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
+              /></svg
+            >Akta kematian</button
+          ><button
+            data-question="IKD itu apa ya?"
+            class="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm text-muted-foreground transition-colors duration-300 hover:bg-muted hover:text-foreground"
+          >
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2ZM11 18h2"
+              /></svg
+            >Identitas digital</button
+          ><button
+            data-question="Mau pindah domisili, mulai dari mana?"
+            class="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm text-muted-foreground transition-colors duration-300 hover:bg-muted hover:text-foreground"
+          >
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0ZM12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+              /></svg
+            >Pindah domisili
+          </button>
+        </nav>
+        <div class="mt-auto pt-8">
+          <div class="rounded-lg border bg-background p-4">
+            <div class="flex items-center gap-2 text-xs font-medium">
+              <svg
+                class="size-3.5 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM12 11v6M12 7h.01"
+                /></svg
+              >Dijawab oleh AI
+            </div>
+            <p class="mt-2 text-xs leading-relaxed text-muted-foreground">
+              Jawaban dibuat oleh AI berdasarkan aturan dan informasi dari situs resmi Dukcapil. AI bisa salah, jadi cek lagi ke Disdukcapil (Dinas Kependudukan dan Pencatatan Sipil) sebelum mengurus dokumen.
+            </p>
+          </div>
+          <a
+            href="/"
+            class="mt-4 flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m12 19-7-7 7-7M5 12h14" /></svg
+            >Kembali ke beranda</a
+          >
+          <button
+            id="dark-mode-toggle"
+            class="rounded-md border bg-muted/30 px-3 py-1.5 text-sm text-foreground hover:bg-muted transition-colors"
+            aria-label="Toggle mode gelap/terang"
+          >
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                id="dark-mode-sun"
+                d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+              /></svg>
+              <svg
+                id="dark-mode-moon"
+                class="hidden"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="5" /></circle>
+                <line x1="12" y1="1" x2="12" y2="3" /></line>
+                <line x1="12" y1="21" x2="12" y2="23" /></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" /></line>
+                <line x1="1" y1="12" x2="3" y2="12" /></line>
+                <line x1="21" y1="12" x2="23" y2="12" /></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" /></line>
+              </svg>
+            </svg>
+          </button>
+        </div>
+      </aside>
+      <div class="flex min-w-0 flex-1 flex-col">
+        <header
+          class="flex h-16 shrink-0 items-center justify-between gap-3 border-b px-4 sm:px-6"
+        >
+          <div class="flex min-w-0 items-center gap-3">
+            <button
+              id="open-sidebar"
+              class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none text-muted-foreground hover:text-foreground hover:bg-muted p-2 md:hidden"
+              aria-label="Buka topik layanan"
+              aria-expanded="false"
+              aria-controls="sidebar"
+            >
+              <svg
+                class="size-5 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 3h18v18H3ZM9 3v18" />
+              </svg></button
+            ><span class="hidden text-muted-foreground sm:inline-flex"
+              ><svg
+                class="size-4 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"
+                /></svg
+            ></span>
+            <div>
+              <p class="text-sm font-bold">Asisten dokumen kependudukan</p>
+              <p class="text-xs text-muted-foreground sm:hidden">Ruang Warga</p>
+            </div>
+            <span class="hidden text-muted-foreground sm:inline">/</span
+            ><span class="hidden text-sm text-muted-foreground sm:inline"
+              >Percakapan baru</span
+            >
+          </div>
+          <div class="flex shrink-0 items-center gap-2">
+            <span
+              class="rounded-md border bg-muted/30 px-2 py-1 text-xs text-muted-foreground"
+              >AI offline</span
+            ><button
+              id="reset-chat"
+              class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none text-muted-foreground hover:text-foreground hover:bg-muted p-2"
+              aria-label="Mulai ulang percakapan"
+              title="Mulai ulang percakapan"
+            >
+              <svg
+                class="size-4 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 12a9 9 0 1 0 3-6.7M3 3v6h6" />
+              </svg>
+            </button>
+          </div>
+        </header>
+        <main id="utama" class="flex min-h-0 flex-1 flex-col">
+          <div
+            id="conversation-scroll"
+            class="min-h-0 flex-1 overflow-y-auto px-4 sm:px-8"
+          >
+            <section
+              id="empty-state"
+              class="mx-auto flex min-h-full max-w-2xl flex-col justify-center py-10 md:py-12"
+            >
+              <div class="mb-8 md:mb-10">
+                <span
+                  class="inline-flex rounded-2xl border bg-muted/30 p-3 shadow-sm"
+                  ><span
+                    class="size-10 inline-flex shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm"
+                    ><svg
+                      class="size-5 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"
+                      /></svg></span
+                ></span>
+                <h1
+                  class="mt-6 text-3xl font-bold tracking-tight sm:text-4xl"
+                >
+                  Ada yang ingin<br />kamu urus?
+                </h1>
+                <p
+                  class="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground"
+                >
+                  Ceritakan pertanyaanmu soal dokumen kependudukan. Pakai bahasa
+                  sehari-hari juga boleh.
+                </p>
+              </div>
+              <div class="grid gap-3 sm:grid-cols-2">
+                <button
+                  data-question="ktp gw ilang gmn ya"
+                  class="group flex items-start gap-3 rounded-xl border bg-background p-4 text-left shadow-sm transition-colors duration-300 hover:bg-muted/50"
+                >
+                  <span class="rounded-lg border bg-muted/30 p-2"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M3 5h18v14H3ZM3 9h18M7 13h3M7 16h6M16 13h2"
+                      /></svg></span
+                  ><span class="min-w-0 flex-1"
+                    ><span class="block text-sm font-bold">KTP hilang</span
+                    ><span class="mt-1 block text-xs text-muted-foreground"
+                      >ktp gw ilang gmn ya</span
+                    ></span
+                  ><span
+                    class="text-muted-foreground group-hover:text-foreground"
+                    ><svg
+                      class="size-3.5 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 17 17 7M7 7h10v10" /></svg
+                  ></span></button
+                ><button
+                  data-question="kk rusak bisa diganti ga"
+                  class="group flex items-start gap-3 rounded-xl border bg-background p-4 text-left shadow-sm transition-colors duration-300 hover:bg-muted/50"
+                >
+                  <span class="rounded-lg border bg-muted/30 p-2"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+                      /></svg></span
+                  ><span class="min-w-0 flex-1"
+                    ><span class="block text-sm font-bold"
+                      >Kartu keluarga</span
+                    ><span class="mt-1 block text-xs text-muted-foreground"
+                      >kk rusak bisa diganti ga</span
+                    ></span
+                  ><span
+                    class="text-muted-foreground group-hover:text-foreground"
+                    ><svg
+                      class="size-3.5 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 17 17 7M7 7h10v10" /></svg
+                  ></span></button
+                ><button
+                  data-question="Bikin akta kelahiran perlu apa?"
+                  class="group flex items-start gap-3 rounded-xl border bg-background p-4 text-left shadow-sm transition-colors duration-300 hover:bg-muted/50"
+                >
+                  <span class="rounded-lg border bg-muted/30 p-2"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8ZM14 2v6h6M8 13h8M8 17h5"
+                      /></svg></span
+                  ><span class="min-w-0 flex-1"
+                    ><span class="block text-sm font-bold"
+                      >Akta kelahiran</span
+                    ><span class="mt-1 block text-xs text-muted-foreground"
+                      >Bikin akta kelahiran perlu apa?</span
+                    ></span
+                  ><span
+                    class="text-muted-foreground group-hover:text-foreground"
+                    ><svg
+                      class="size-3.5 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 17 17 7M7 7h10v10" /></svg
+                  ></span></button
+                ><button
+                  data-question="Mau pindah domisili, mulai dari mana?"
+                  class="group flex items-start gap-3 rounded-xl border bg-background p-4 text-left shadow-sm transition-colors duration-300 hover:bg-muted/50"
+                >
+                  <span class="rounded-lg border bg-muted/30 p-2"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0ZM12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                      /></svg></span
+                  ><span class="min-w-0 flex-1"
+                    ><span class="block text-sm font-bold"
+                      >Pindah domisili</span
+                    ><span class="mt-1 block text-xs text-muted-foreground"
+                      >Mau pindah domisili, mulai dari mana?</span
+                    ></span
+                  ><span
+                    class="text-muted-foreground group-hover:text-foreground"
+                    ><svg
+                      class="size-3.5 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 17 17 7M7 7h10v10" /></svg
+                  ></span>
+                </button>
+              </div>
+              <p
+                class="mt-6 flex items-center gap-2 text-xs text-muted-foreground"
+              >
+                <svg
+                  class="size-3.5 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 10h14v11H5ZM8 10V7a4 4 0 0 1 8 0v3" /></svg
+                >Jangan tulis NIK, nomor KK, atau alamat lengkap.
+              </p>
+            </section>
+            <section
+              id="messages"
+              class="mx-auto hidden max-w-2xl space-y-6 py-8"
+              role="log"
+              aria-live="polite"
+              aria-relevant="additions"
+              aria-label="Percakapan"
+            ></section>
+          </div>
+          <div class="shrink-0 bg-background px-4 pb-4 pt-3 sm:px-8 sm:pb-6">
+            <div class="mx-auto max-w-2xl">
+              <form
+                id="chat-form"
+                class="rounded-xl border bg-background p-3 shadow-sm focus-within:ring-2 focus-within:ring-ring/20"
+              >
+                <label class="sr-only" for="question"
+                  >Pertanyaan tentang layanan kependudukan</label
+                ><textarea
+                  id="question"
+                  name="question"
+                  class="max-h-32 min-h-12 w-full resize-none bg-transparent px-1 py-1 text-base placeholder:text-muted-foreground focus:outline-none focus-visible:outline-none focus-visible:ring-0 sm:text-sm"
+                  rows="2"
+                  maxlength="600"
+                  placeholder="Tulis pertanyaanmu di sini…"
+                  aria-describedby="chat-hint chat-error"
+                ></textarea>
+                <div class="flex items-center justify-between gap-3">
+                  <span class="px-1 text-xs font-bold text-muted-foreground"
+                    ><svg
+                      class="mr-1 inline size-3 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"
+                      /></svg
+                    >Tanya soal dokumen kependudukan</span
+                  ><button
+                    id="send-button"
+                    class="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-colors duration-300 active:scale-[.98] disabled:cursor-not-allowed disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none bg-primary text-primary-foreground shadow-sm hover:bg-primary/90 px-4 py-2.5 size-9 rounded-lg p-0"
+                    type="submit"
+                    aria-label="Kirim pertanyaan"
+                    disabled
+                  >
+                    <svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 19V5M5 12l7-7 7 7" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+              <p
+                id="chat-error"
+                class="mt-2 hidden text-xs text-foreground"
+                role="alert"
+              ></p>
+              <p
+                id="chat-hint"
+                class="mt-3 text-center text-xs leading-relaxed text-muted-foreground"
+              >
+                Jawaban dibuat AI dan bisa salah.<span
+                  class="hidden sm:inline"
+                >
+                  Cek lagi ke Disdukcapil di daerahmu sebelum mengurus.</span
+                >
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="/static/js/chat.js"></script>
+    <script src="/static/js/motion.js"></script>
+    <script src="/static/js/theme.js"></script>
+  </body>
+</html>

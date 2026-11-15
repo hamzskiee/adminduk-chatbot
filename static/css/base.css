@@ -1,0 +1,449 @@
+/* Hallmark v2 — theme: Tailark/shadcn by request; shape: product hero; signature: live chat preview. */
+/* Critique: earlier custom civic green replaced with authentic neutral tokens and utility-based spacing. */
+/* waive: announcement pill, nested product frame, service cards, FAQ accordion are explicit reference requirements. */
+:root {
+  --background: 210 25% 97%;
+  --foreground: 221 32% 10%;
+  --primary: 174 75% 25%;
+  --primary-foreground: 0 0% 100%;
+  --muted: 215 25% 94%;
+  --muted-foreground: 215 18% 41%;
+  --border: 210 15% 89%;
+  --ring: 175 82% 42%;
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Manrope", system-ui, sans-serif;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --mask: hsl(var(--foreground));
+  --glint: hsl(var(--primary-foreground)/0.9);
+  --selection: 210 15% 89%;
+  --shadow: 240 5.9% 10%;
+  --transition: all 0.3s ease;
+}
+
+.dark {
+  --background: 221 32% 10% !important;
+  --foreground: 0 0% 100% !important;
+  --primary: 174 75% 25% !important;
+  --primary-foreground: 0 0% 100% !important;
+  --muted: 215 25% 15% !important;
+  --muted-foreground: 215 18% 80% !important;
+  --border: 210 15% 20% !important;
+  --ring: 175 82% 55% !important;
+}
+
+/* Smooth transition when dark mode is toggled */
+html.dark {
+  --transition: all 0.3s ease;
+}
+html,
+body {
+  overflow-x: clip;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+body {
+  font-family: var(--font-sans);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  min-width: 0;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  font-weight: 600;
+}
+p {
+  text-wrap: pretty;
+}
+::selection {
+  background: hsl(var(--selection));
+}
+a,
+button,
+summary,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 4px;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+dialog::backdrop {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+  font-feature-settings: "ss01";
+}
+body {
+  font-feature-settings: "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+/* Scroll reveal: 21st.dev Blur Reveal (tom_ui) ported to IntersectionObserver */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(2rem);
+  filter: blur(6px);
+  transition:
+    opacity 0.7s var(--ease),
+    transform 0.7s var(--ease),
+    filter 0.7s var(--ease);
+  transition-delay: var(--d, 0ms);
+}
+.js [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+/* Aceternity Text Generate Effect: words fade in from blur, staggered */
+.tg-word {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateY(0.25em);
+  animation: tg 0.8s var(--ease) forwards;
+  animation-delay: var(--d);
+}
+@keyframes tg {
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+}
+.hero-enter {
+  opacity: 0;
+  animation: rise 0.8s var(--ease) forwards;
+  animation-delay: var(--d, 0ms);
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+/* Aceternity Background Grid + Spotlight: masked dotted grid and slow drifting light */
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(hsl(var(--border)) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 60% 50% at 50% 30%,
+    var(--mask) 30%,
+    transparent 75%
+  );
+  mask-image: radial-gradient(
+    ellipse 60% 50% at 50% 30%,
+    var(--mask) 30%,
+    transparent 75%
+  );
+  opacity: 0;
+  animation: fadein 1.5s var(--ease) 0.2s forwards;
+}
+.hero-spot {
+  position: absolute;
+  top: -10rem;
+  left: 50%;
+  width: 40rem;
+  height: 40rem;
+  margin-left: -20rem;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 9999px;
+  background: radial-gradient(
+    closest-side,
+    hsl(var(--foreground) / 0.07),
+    transparent
+  );
+  animation:
+    fadein 1.5s var(--ease) forwards,
+    drift 9s var(--ease) 1.5s infinite alternate;
+  opacity: 0;
+}
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes drift {
+  from {
+    transform: translateX(-6rem);
+  }
+  to {
+    transform: translateX(6rem);
+  }
+}
+/* Aceternity Card Spotlight: radial light follows the cursor */
+.spot {
+  position: relative;
+  isolation: isolate;
+  transition:
+    transform 0.5s var(--ease),
+    box-shadow 0.5s var(--ease);
+}
+.spot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s var(--ease);
+  background: radial-gradient(
+    350px circle at var(--mx, 50%) var(--my, 50%),
+    hsl(var(--foreground) / 0.06),
+    transparent 70%
+  );
+}
+.spot:hover::after {
+  opacity: 1;
+}
+.spot:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 25px -5px hsl(var(--shadow) / 0.08),
+    0 8px 10px -6px hsl(var(--shadow) / 0.06);
+}
+/* Aceternity Moving Border on the main CTA */
+.moving-border {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.moving-border::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: 50%;
+  top: 50%;
+  width: 300%;
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0 70%,
+    var(--glint) 80%,
+    transparent 90%
+  );
+  animation: spin 4s linear infinite;
+}
+.moving-border::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 1.5px;
+  border-radius: calc(0.5rem - 1.5px);
+  background: hsl(var(--primary));
+}
+@keyframes spin {
+  to {
+    rotate: 360deg;
+  }
+}
+/* Micro interactions */
+a.inline-flex,
+button {
+  transition-property:
+    transform, background-color, color, border-color, box-shadow, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: var(--ease);
+}
+a.inline-flex:hover,
+button:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+a.inline-flex:active,
+button:not(:disabled):active {
+  transform: scale(0.98);
+}
+a.inline-flex svg,
+button svg {
+  transition: transform 0.5s var(--ease);
+}
+a.inline-flex:hover svg:last-child {
+  transform: translateX(2px);
+}
+/* FAQ accordion: 21st.dev shadcn accordion pattern, height via grid rows */
+details .faq-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition:
+    grid-template-rows 0.5s var(--ease),
+    opacity 0.4s var(--ease);
+  opacity: 0;
+}
+details .faq-body > div {
+  overflow: hidden;
+}
+details[open] .faq-body.is-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+details summary svg {
+  transition: transform 0.5s var(--ease);
+}
+/* Chat: message enter, BoardUI agent-thinking dot wave + 21st.dev Text Shimmer Wave label */
+.msg-in {
+  animation: msg 0.5s var(--ease) both;
+}
+@keyframes msg {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.msg-in[data-role="user"] {
+  transform-origin: right bottom;
+}
+.msg-in[data-role="assistant"] {
+  transform-origin: left bottom;
+}
+.typing-dot {
+  animation: typing 1.2s var(--ease) infinite;
+}
+.typing-dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.typing-dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+@keyframes typing {
+  0%,
+  60%,
+  100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+}
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--muted-foreground)) 0 40%,
+    hsl(var(--foreground)) 50%,
+    hsl(var(--muted-foreground)) 60% 100%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 2s linear infinite;
+}
+@keyframes shimmer {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
+/* BoardUI app shell: sidebar slides in, scrim fades */
+@media (max-width: 767px) {
+  #sidebar.flex {
+    animation: slidein 0.5s var(--ease);
+  }
+  #sidebar-scrim:not(.hidden) {
+    animation: fadein 0.3s var(--ease) forwards;
+    opacity: 0;
+  }
+}
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: none;
+  }
+}
+#sidebar a,
+#sidebar button {
+  position: relative;
+}
+dialog[open] {
+  animation: msg 0.4s var(--ease);
+}
+#mobile-menu:not(.hidden) a {
+  animation: rise 0.5s var(--ease) both;
+}
+#mobile-menu:not(.hidden) a:nth-child(2) {
+  animation-delay: 60ms;
+}
+#mobile-menu:not(.hidden) a:nth-child(3) {
+  animation-delay: 120ms;
+}
+#mobile-menu:not(.hidden) a:nth-child(4) {
+  animation-delay: 180ms;
+}
+#mobile-menu:not(.hidden) a:nth-child(5) {
+  animation-delay: 240ms;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.2s !important;
+    transition-property: opacity !important;
+  }
+/* Icon transition for dark mode toggle */
+#dark-mode-sun,
+#dark-mode-moon {
+  transition: opacity 0.3s ease;
+}
+
+.js [data-reveal] {
+    transform: none;
+    filter: none;
+  }
+  .tg-word,
+  .hero-enter {
+    transform: none !important;
+    filter: none !important;
+  }
+  .moving-border::before,
+  .hero-spot {
+    animation: none !important;
+  }
+  .spot:hover,
+  a.inline-flex:hover,
+  button:hover {
+    transform: none !important;
+  }
+}

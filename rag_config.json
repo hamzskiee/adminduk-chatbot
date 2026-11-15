@@ -1,0 +1,18 @@
+{
+ "retriever_C": 20.0,
+ "prefix": "query: ",
+ "pipeline": {
+  "top_k": 3,
+  "min_confidence": 0.1,
+  "policy_confidence": 0.3,
+  "trust_confidence": 0.3,
+  "min_grounding": 0.35,
+  "max_new_tokens": 280,
+  "repetition_penalty": 1.0,
+  "max_input_tokens": 1280,
+  "switch_margin": 0.1,
+  "saran_confidence": 0.25,
+  "saran_k": 3,
+  "min_copy_similarity": 0.8
+ }
+}
